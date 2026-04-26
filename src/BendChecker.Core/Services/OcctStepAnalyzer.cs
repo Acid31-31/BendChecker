@@ -168,15 +168,14 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
 
                         if (positions.Count > 0)
                         {
-                            var color = (DefaultRed, DefaultGreen, DefaultBlue, DefaultAlpha);
                             parts.Add(new StepMeshPart(
                                 positions.ToArray(),
                                 normals.ToArray(),
                                 indices.ToArray(),
-                                color.DefaultRed,
-                                color.DefaultGreen,
-                                color.DefaultBlue,
-                                color.DefaultAlpha));
+                                DefaultRed,
+                                DefaultGreen,
+                                DefaultBlue,
+                                DefaultAlpha));
                         }
                     }
                 }
