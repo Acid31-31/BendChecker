@@ -25,11 +25,18 @@ public partial class App : Application
             if (!parts.Contains(nativeDir, StringComparer.OrdinalIgnoreCase))
                 Environment.SetEnvironmentVariable("PATH", $"{nativeDir};{path}", EnvironmentVariableTarget.Process);
         }
+        else
+        {
+            Debug.WriteLine($"Warning: Occt.NET runtime folder not found: {nativeDir}");
+        }
 
         var arch = Environment.Is64BitProcess ? "x64" : "x86";
         var legacyNativeDir = Path.Combine(AppContext.BaseDirectory, "occt", arch);
         if (!Directory.Exists(legacyNativeDir))
+        {
+            Debug.WriteLine($"Warning: Occt.NET legacy folder not found: {legacyNativeDir}");
             return;
+        }
 
         var legacyPath = Environment.GetEnvironmentVariable("PATH") ?? string.Empty;
         var legacyParts = legacyPath.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);

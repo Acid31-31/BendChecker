@@ -66,7 +66,7 @@ public partial class MainWindow : Window
             ResetViewport();
             ShowStartupPreview();
             StatusText.Text = "Fehler beim STEP lesen";
-            MessageBox.Show(ex.Message, "BendChecker", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(ex.ToString(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -111,7 +111,7 @@ public partial class MainWindow : Window
         catch (Exception ex)
         {
             StatusText.Text = "Fehler";
-            MessageBox.Show(ex.Message, "BendChecker", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(ex.ToString(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
