@@ -56,14 +56,21 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
     {
         return Task.Run<StepScene?>(() =>
         {
-            ct.ThrowIfCancellationRequested();
+            try
+            {
+                ct.ThrowIfCancellationRequested();
 
-            var context = ReadDocumentContext(stepPath, ct);
-            var parts = Triangulate(context.RootShape, context.ColorTool, ct);
-            if (parts.Count == 0)
-                return null;
+                var context = ReadDocumentContext(stepPath, ct);
+                var parts = Triangulate(context.RootShape, context.ColorTool, ct);
+                if (parts.Count == 0)
+                    return null;
 
-            return new StepScene(parts);
+                return new StepScene(parts);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("STEP Preview failed: " + ex.Message, ex);
+            }
         }, ct);
     }
 
@@ -127,48 +134,57 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
             {
                 ct.ThrowIfCancellationRequested();
 
-                var faceShape = explorer.Current;
-                var face = TopoDS_Face.Cast((nint)faceShape.NativeInstance);
-                var triangulation = BRep_Tool.Triangulation(face, out var location);
-
-                if (triangulation is not null && triangulation.NbTriangles > 0)
+                try
                 {
-                    var positions = new List<double>(triangulation.NbTriangles * 9);
-                    var normals = new List<double>(triangulation.NbTriangles * 9);
-                    var indices = new List<int>(triangulation.NbTriangles * 3);
-                    var transform = location.Transformation;
-                    var reversed = face.Orientation == TopAbs_Orientation.TopAbs_REVERSED;
+                    var faceShape = explorer.Current;
+                    var face = TopoDS_Face.Cast((nint)faceShape.NativeInstance);
+                    var triangulation = BRep_Tool.Triangulation(face, out var location);
 
-                    for (var i = 1; i <= triangulation.NbTriangles; i++)
+                    if (triangulation is not null && triangulation.NbTriangles > 0)
                     {
-                        var triangle = triangulation.Triangle(i);
-                        triangle.Get(out var n1, out var n2, out var n3);
+                        var positions = new List<double>(triangulation.NbTriangles * 9);
+                        var normals = new List<double>(triangulation.NbTriangles * 9);
+                        var indices = new List<int>(triangulation.NbTriangles * 3);
+                        var transform = location.Transformation;
+                        var reversed = face.Orientation == TopAbs_Orientation.TopAbs_REVERSED;
 
-                        if (reversed)
-                            (n2, n3) = (n3, n2);
+                        for (var i = 1; i <= triangulation.NbTriangles; i++)
+                        {
+                            var triangle = triangulation.Triangle(i);
+                            triangle.Get(out var n1, out var n2, out var n3);
 
-                        var p1 = TransformPoint(triangulation.Node(n1), transform);
-                        var p2 = TransformPoint(triangulation.Node(n2), transform);
-                        var p3 = TransformPoint(triangulation.Node(n3), transform);
-                        var normal = CalculateNormal(p1, p2, p3);
+                            if (reversed)
+                                (n2, n3) = (n3, n2);
 
-                        AppendVertex(positions, normals, p1, normal, indices);
-                        AppendVertex(positions, normals, p2, normal, indices);
-                        AppendVertex(positions, normals, p3, normal, indices);
+                            var p1 = TransformPoint(triangulation.Node(n1), transform);
+                            var p2 = TransformPoint(triangulation.Node(n2), transform);
+                            var p3 = TransformPoint(triangulation.Node(n3), transform);
+                            var normal = CalculateNormal(p1, p2, p3);
+
+                            AppendVertex(positions, normals, p1, normal, indices);
+                            AppendVertex(positions, normals, p2, normal, indices);
+                            AppendVertex(positions, normals, p3, normal, indices);
+                        }
+
+                        if (positions.Count > 0)
+                        {
+                            var color = (DefaultRed, DefaultGreen, DefaultBlue, DefaultAlpha);
+                            parts.Add(new StepMeshPart(
+                                positions.ToArray(),
+                                normals.ToArray(),
+                                indices.ToArray(),
+                                color.DefaultRed,
+                                color.DefaultGreen,
+                                color.DefaultBlue,
+                                color.DefaultAlpha));
+                        }
                     }
-
-                    if (positions.Count > 0)
-                    {
-                        var color = ResolveColor(colorTool, faceShape, shape);
-                        parts.Add(new StepMeshPart(
-                            positions.ToArray(),
-                            normals.ToArray(),
-                            indices.ToArray(),
-                            color.Red,
-                            color.Green,
-                            color.Blue,
-                            color.Alpha));
-                    }
+                }
+                catch (Exception ex)
+                {
+                    _ = ex;
+                    explorer.Next();
+                    continue;
                 }
 
                 explorer.Next();
