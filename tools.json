@@ -1,0 +1,6 @@
+{
+  "default": {
+    "punch": { "angle_deg": 88, "tip_radius_mm": 1.0 },
+    "die":   { "angle_deg": 90 }
+  }
+}
