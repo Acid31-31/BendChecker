@@ -15,7 +15,6 @@ public partial class MainWindow : Window
 {
     private readonly RuleService _ruleService;
     private readonly IStepAnalyzer _stepAnalyzer;
-    private readonly IStepPreviewLoader _stepPreviewLoader;
     private readonly BendCheckService _svc;
     private readonly bool _isDesignMode;
     private HelixViewport3D? _stepViewport;
@@ -26,19 +25,7 @@ public partial class MainWindow : Window
 
         _isDesignMode = DesignerProperties.GetIsInDesignMode(this);
         _ruleService = new RuleService();
-
-        if (_isDesignMode)
-        {
-            _stepAnalyzer = new StepAnalyzerStub();
-            _stepPreviewLoader = new DesignTimeStepPreviewLoader();
-        }
-        else
-        {
-            var stepAnalyzer = new OcctStepAnalyzer();
-            _stepAnalyzer = stepAnalyzer;
-            _stepPreviewLoader = stepAnalyzer;
-        }
-
+        _stepAnalyzer = _isDesignMode ? new StepAnalyzerStub() : new OcctStepAnalyzer();
         _svc = new BendCheckService(_ruleService, _stepAnalyzer);
 
         if (_isDesignMode)
@@ -72,33 +59,7 @@ public partial class MainWindow : Window
 
         try
         {
-            StatusText.Text = "Lese STEP…";
-
-            var stepPath = StepPathText.Text.Trim();
-            await LoadAndRenderStepAsync(stepPath, CancellationToken.None);
-
-            var thickness = await _stepAnalyzer.TryGetThicknessMmAsync(stepPath, CancellationToken.None);
-            if (thickness is not null)
-            {
-                var de = CultureInfo.GetCultureInfo("de-DE");
-                ThicknessText.Text = thickness.Value.ToString("0.00", de);
-                StatusText.Text = $"STEP geladen. Dicke erkannt: {ThicknessText.Text} mm";
-
-                var rulesPath = RulesPathText.Text.Trim();
-                if (!string.IsNullOrWhiteSpace(rulesPath) && File.Exists(rulesPath))
-                {
-                    var material = GetSelectedMaterial();
-                    var rules = _ruleService.LoadRules(rulesPath);
-                    var v = _ruleService.SuggestPrismaV(rules, material, thickness.Value);
-                    PrismaVText.Text = v ?? "";
-                    if (!string.IsNullOrWhiteSpace(v))
-                        StatusText.Text += $", Prisma V: {v}";
-                }
-            }
-            else
-            {
-                StatusText.Text = "STEP geladen. Dicke nicht gefunden – bitte manuell eingeben.";
-            }
+            await LoadStepIntoUiAsync(dlg.FileName, CancellationToken.None);
         }
         catch (Exception ex)
         {
@@ -109,10 +70,15 @@ public partial class MainWindow : Window
         }
     }
 
-    private void PickRules_Click(object sender, RoutedEventArgs e)
+    private async void PickRules_Click(object sender, RoutedEventArgs e)
     {
         var dlg = new OpenFileDialog { Filter = "Excel (*.xlsx)|*.xlsx|All files (*.*)|*.*" };
-        if (dlg.ShowDialog() == true) RulesPathText.Text = dlg.FileName;
+        if (dlg.ShowDialog() != true)
+            return;
+
+        RulesPathText.Text = dlg.FileName;
+        TrySuggestPrismaV();
+        await Dispatcher.InvokeAsync(() => { }, System.Windows.Threading.DispatcherPriority.Background);
     }
 
     private async void Analyze_Click(object sender, RoutedEventArgs e)
@@ -128,7 +94,7 @@ public partial class MainWindow : Window
             if (string.IsNullOrWhiteSpace(rules) || !File.Exists(rules))
                 throw new InvalidOperationException("Bitte Excel-Regeldatei auswaehlen.");
 
-            await LoadAndRenderStepAsync(step, CancellationToken.None);
+            await LoadStepIntoUiAsync(step, CancellationToken.None);
 
             var material = GetSelectedMaterial();
             var tRaw = ThicknessText.Text.Trim().Replace(",", ".");
@@ -160,10 +126,48 @@ public partial class MainWindow : Window
         stepViewport.Children.Add(new CoordinateSystemVisual3D());
     }
 
-    private async Task LoadAndRenderStepAsync(string stepPath, CancellationToken ct)
+    private async Task LoadStepIntoUiAsync(string stepPath, CancellationToken ct)
     {
-        var preview = await _stepPreviewLoader.LoadPreviewAsync(stepPath, ct);
-        RenderPreview(preview);
+        StatusText.Text = "Lese STEP…";
+
+        var scene = await _stepAnalyzer.TryLoadSceneAsync(stepPath, ct);
+        if (scene is null || scene.Parts.Count == 0)
+            throw new InvalidOperationException("In der STEP-Datei wurde keine darstellbare 3D-Geometrie gefunden.");
+
+        RenderScene(scene);
+
+        var thickness = await _stepAnalyzer.TryGetThicknessMmAsync(stepPath, ct);
+        if (thickness is not null)
+        {
+            var de = CultureInfo.GetCultureInfo("de-DE");
+            ThicknessText.Text = thickness.Value.ToString("0.00", de);
+            StatusText.Text = $"STEP geladen. Dicke erkannt: {ThicknessText.Text} mm";
+            TrySuggestPrismaV();
+        }
+        else
+        {
+            StatusText.Text = "STEP geladen. Dicke nicht gefunden – bitte manuell eingeben.";
+        }
+    }
+
+    private void TrySuggestPrismaV()
+    {
+        var rulesPath = RulesPathText.Text.Trim();
+        if (string.IsNullOrWhiteSpace(rulesPath) || !File.Exists(rulesPath))
+            return;
+
+        var thicknessRaw = ThicknessText.Text.Trim().Replace(",", ".");
+        if (!decimal.TryParse(thicknessRaw, NumberStyles.Any, CultureInfo.InvariantCulture, out var thickness))
+            return;
+
+        var material = GetSelectedMaterial();
+        var rules = _ruleService.LoadRules(rulesPath);
+        var v = _ruleService.SuggestPrismaV(rules, material, thickness);
+        if (!string.IsNullOrWhiteSpace(v))
+        {
+            PrismaVText.Text = v;
+            StatusText.Text += $", Prisma V: {v}";
+        }
     }
 
     private void ShowStartupPreview()
@@ -188,43 +192,68 @@ public partial class MainWindow : Window
         StatusText.Text = "Testmodell sichtbar – 3D-Vorschau aktiv.";
     }
 
-    private void RenderPreview(StepPreviewScene scene)
-    {
-        var mesh = new MeshGeometry3D();
-        for (var i = 0; i <= scene.TriangleVertices.Length - 3; i += 3)
-        {
-            mesh.Positions.Add(new Point3D(scene.TriangleVertices[i], scene.TriangleVertices[i + 1], scene.TriangleVertices[i + 2]));
-            mesh.TriangleIndices.Add(mesh.Positions.Count - 1);
-        }
-
-        RenderModel(mesh, $"STEP-Vorschau geladen: {mesh.Positions.Count / 3} Dreiecke.");
-    }
-
-    private void RenderModel(MeshGeometry3D mesh, string status)
+    private void RenderScene(StepScene scene)
     {
         var stepViewport = EnsureViewport();
         if (stepViewport is null)
             return;
 
-        var brush = new SolidColorBrush(Color.FromRgb(185, 190, 205));
-        var material = new MaterialGroup();
-        material.Children.Add(new EmissiveMaterial(new SolidColorBrush(Color.FromRgb(42, 46, 56))));
-        material.Children.Add(new DiffuseMaterial(brush));
-
-        var model = new GeometryModel3D
-        {
-            Geometry = mesh,
-            Material = material,
-            BackMaterial = material
-        };
-
         stepViewport.Children.Clear();
         stepViewport.Children.Add(new SunLight());
         stepViewport.Children.Add(new CoordinateSystemVisual3D());
-        stepViewport.Children.Add(new ModelVisual3D { Content = model });
 
-        SetCamera(mesh.Bounds);
-        StatusText.Text = status;
+        var bounds = Rect3D.Empty;
+        var triangleCount = 0;
+
+        foreach (var part in scene.Parts)
+        {
+            if (part.Positions.Length == 0 || part.Indices.Length == 0)
+                continue;
+
+            var mesh = new MeshGeometry3D();
+            for (var i = 0; i <= part.Positions.Length - 3; i += 3)
+                mesh.Positions.Add(new Point3D(part.Positions[i], part.Positions[i + 1], part.Positions[i + 2]));
+
+            for (var i = 0; i < part.Normals.Length; i += 3)
+                mesh.Normals.Add(new Vector3D(part.Normals[i], part.Normals[i + 1], part.Normals[i + 2]));
+
+            foreach (var index in part.Indices)
+                mesh.TriangleIndices.Add(index);
+
+            triangleCount += part.Indices.Length / 3;
+            bounds = bounds.IsEmpty ? mesh.Bounds : Rect3D.Union(bounds, mesh.Bounds);
+
+            var baseColor = Color.FromArgb(part.Alpha, part.Red, part.Green, part.Blue);
+            var material = CreateMaterial(baseColor);
+            var model = new GeometryModel3D
+            {
+                Geometry = mesh,
+                Material = material,
+                BackMaterial = material
+            };
+
+            stepViewport.Children.Add(new ModelVisual3D { Content = model });
+        }
+
+        if (!bounds.IsEmpty)
+            SetCamera(bounds);
+
+        StatusText.Text = $"STEP-Vorschau geladen: {triangleCount} Dreiecke.";
+    }
+
+    private static Material CreateMaterial(Color color)
+    {
+        var diffuseBrush = new SolidColorBrush(color);
+        var emissiveBrush = new SolidColorBrush(Color.FromArgb(
+            color.A,
+            (byte)Math.Max(18, color.R / 4),
+            (byte)Math.Max(18, color.G / 4),
+            (byte)Math.Max(18, color.B / 4)));
+
+        var material = new MaterialGroup();
+        material.Children.Add(new EmissiveMaterial(emissiveBrush));
+        material.Children.Add(new DiffuseMaterial(diffuseBrush));
+        return material;
     }
 
     private void SetCamera(Rect3D bounds)
@@ -264,7 +293,9 @@ public partial class MainWindow : Window
             Background = new SolidColorBrush(Color.FromRgb(30, 30, 30)),
             ShowCoordinateSystem = true,
             ShowViewCube = true,
-            ZoomExtentsWhenLoaded = false
+            ZoomExtentsWhenLoaded = false,
+            RotateAroundMouseDownPoint = true,
+            IsHeadLightEnabled = false
         };
 
         PreviewHost.Children.Add(_stepViewport);
@@ -274,24 +305,6 @@ public partial class MainWindow : Window
     private string GetSelectedMaterial()
     {
         return ((System.Windows.Controls.ComboBoxItem)MaterialBox.SelectedItem).Content?.ToString() ?? "Stahl";
-    }
-
-    private sealed class DesignTimeStepPreviewLoader : IStepPreviewLoader
-    {
-        private static readonly StepPreviewScene Scene = new([
-            -20d, -10d, 0d,
-            20d, -10d, 0d,
-            20d, 10d, 0d,
-            -20d, -10d, 0d,
-            20d, 10d, 0d,
-            -20d, 10d, 0d
-        ]);
-
-        public Task<StepPreviewScene> LoadPreviewAsync(string stepPath, CancellationToken ct)
-        {
-            ct.ThrowIfCancellationRequested();
-            return Task.FromResult(Scene);
-        }
     }
 }
 

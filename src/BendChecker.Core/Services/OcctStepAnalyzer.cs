@@ -5,8 +5,13 @@ using Occt;
 
 namespace BendChecker.Core.Services;
 
-public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
+public sealed class OcctStepAnalyzer : IStepAnalyzer
 {
+    private const byte DefaultRed = 185;
+    private const byte DefaultGreen = 190;
+    private const byte DefaultBlue = 205;
+    private const byte DefaultAlpha = 255;
+
     public Task<bool> CanOpenAsync(string stepPath, CancellationToken ct)
     {
         return Task.Run(() =>
@@ -18,7 +23,7 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
 
             try
             {
-                _ = ReadRootShape(stepPath, ct);
+                _ = ReadDocumentContext(stepPath, ct);
                 return true;
             }
             catch
@@ -37,40 +42,28 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
             if (!File.Exists(stepPath))
                 return null;
 
-            var fileName = Path.GetFileNameWithoutExtension(stepPath);
-            var matches = Regex.Matches(
-                fileName,
-                @"(?ix)
-                (?:^|[^0-9])
-                (?:t|thickness|dicke)?
-                \s*[:=_-]?
-                (?<value>\d+(?:[\.,]\d+)?)
-                \s*(?:mm)?
-                (?:$|[^0-9])");
+            var thicknessFromName = StepAnalyzerStub.TryParseThicknessFromName(stepPath);
+            if (thicknessFromName is not null)
+                return thicknessFromName;
 
-            foreach (Match match in matches)
-            {
-                var raw = match.Groups["value"].Value.Replace(',', '.');
-                if (decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var thickness))
-                    return thickness;
-            }
-
-            return null;
+            var context = ReadDocumentContext(stepPath, ct);
+            var thickness = TryEstimateThicknessMm(context.RootShape, ct);
+            return thickness is null ? null : Math.Round(thickness.Value, 2, MidpointRounding.AwayFromZero);
         }, ct);
     }
 
-    public Task<StepPreviewScene> LoadPreviewAsync(string stepPath, CancellationToken ct)
+    public Task<StepScene?> TryLoadSceneAsync(string stepPath, CancellationToken ct)
     {
-        return Task.Run(() =>
+        return Task.Run<StepScene?>(() =>
         {
             ct.ThrowIfCancellationRequested();
 
-            var shape = ReadRootShape(stepPath, ct);
-            var triangleVertices = Triangulate(shape, ct);
-            if (triangleVertices.Count == 0)
-                throw new InvalidOperationException("In der STEP-Datei wurde keine darstellbare 3D-Geometrie gefunden.");
+            var context = ReadDocumentContext(stepPath, ct);
+            var parts = Triangulate(context.RootShape, context.ColorTool, ct);
+            if (parts.Count == 0)
+                return null;
 
-            return new StepPreviewScene(triangleVertices.ToArray());
+            return new StepScene(parts);
         }, ct);
     }
 
@@ -81,7 +74,7 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
                 stepPath.EndsWith(".stp", StringComparison.OrdinalIgnoreCase));
     }
 
-    private static TopoDS_Shape ReadRootShape(string stepPath, CancellationToken ct)
+    private static StepDocumentContext ReadDocumentContext(string stepPath, CancellationToken ct)
     {
         if (!IsSupportedStepFile(stepPath))
             throw new FileNotFoundException("STEP-Datei wurde nicht gefunden oder hat keine gueltige Endung.", stepPath);
@@ -113,10 +106,11 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
         if (shape is null || shape.IsNull)
             throw new InvalidOperationException("Die STEP-Datei enthaelt keine darstellbare Geometrie.");
 
-        return shape;
+        var colorTool = XCAFDoc_DocumentTool.ColorTool(document.Main);
+        return new StepDocumentContext(shape, colorTool);
     }
 
-    private static List<double> Triangulate(TopoDS_Shape shape, CancellationToken ct)
+    private static List<StepMeshPart> Triangulate(TopoDS_Shape shape, XCAFDoc_ColorTool? colorTool, CancellationToken ct)
     {
         var bounds = shape.BoundingBox;
         var diagonal = bounds.CornerMin.Distance(bounds.CornerMax);
@@ -124,7 +118,7 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
 
         _ = new BRepMesh_IncrementalMesh(shape, deflection, false, 0.5, true);
 
-        var triangleVertices = new List<double>();
+        var parts = new List<StepMeshPart>();
 
         unsafe
         {
@@ -139,6 +133,9 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
 
                 if (triangulation is not null && triangulation.NbTriangles > 0)
                 {
+                    var positions = new List<double>(triangulation.NbTriangles * 9);
+                    var normals = new List<double>(triangulation.NbTriangles * 9);
+                    var indices = new List<int>(triangulation.NbTriangles * 3);
                     var transform = location.Transformation;
                     var reversed = face.Orientation == TopAbs_Orientation.TopAbs_REVERSED;
 
@@ -150,9 +147,27 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
                         if (reversed)
                             (n2, n3) = (n3, n2);
 
-                        AppendPoint(triangleVertices, triangulation.Node(n1), transform);
-                        AppendPoint(triangleVertices, triangulation.Node(n2), transform);
-                        AppendPoint(triangleVertices, triangulation.Node(n3), transform);
+                        var p1 = TransformPoint(triangulation.Node(n1), transform);
+                        var p2 = TransformPoint(triangulation.Node(n2), transform);
+                        var p3 = TransformPoint(triangulation.Node(n3), transform);
+                        var normal = CalculateNormal(p1, p2, p3);
+
+                        AppendVertex(positions, normals, p1, normal, indices);
+                        AppendVertex(positions, normals, p2, normal, indices);
+                        AppendVertex(positions, normals, p3, normal, indices);
+                    }
+
+                    if (positions.Count > 0)
+                    {
+                        var color = ResolveColor(colorTool, faceShape, shape);
+                        parts.Add(new StepMeshPart(
+                            positions.ToArray(),
+                            normals.ToArray(),
+                            indices.ToArray(),
+                            color.Red,
+                            color.Green,
+                            color.Blue,
+                            color.Alpha));
                     }
                 }
 
@@ -160,14 +175,142 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer, IStepPreviewLoader
             }
         }
 
-        return triangleVertices;
+        return parts;
     }
 
-    private static void AppendPoint(List<double> target, gp_Pnt point, gp_Trsf transform)
+    private static decimal? TryEstimateThicknessMm(TopoDS_Shape shape, CancellationToken ct)
     {
-        var transformed = point.Transformed(transform);
-        target.Add(transformed.X);
-        target.Add(transformed.Y);
-        target.Add(transformed.Z);
+        var planes = new List<gp_Pln>();
+
+        unsafe
+        {
+            var explorer = new TopExp_Explorer(shape, TopAbs_ShapeEnum.TopAbs_FACE);
+            while (explorer.More)
+            {
+                ct.ThrowIfCancellationRequested();
+
+                var faceShape = explorer.Current;
+                var face = TopoDS_Face.Cast((nint)faceShape.NativeInstance);
+                var adaptor = new BRepAdaptor_Surface(face);
+                if (adaptor.Type == GeomAbs_SurfaceType.GeomAbs_Plane)
+                    planes.Add(adaptor.Plane);
+
+                explorer.Next();
+            }
+        }
+
+        double? best = null;
+        for (var i = 0; i < planes.Count; i++)
+        {
+            var normalA = planes[i].Axis.Direction;
+            for (var j = i + 1; j < planes.Count; j++)
+            {
+                var normalB = planes[j].Axis.Direction;
+                var alignment = Math.Abs(normalA.Dot(normalB));
+                if (alignment < 0.999)
+                    continue;
+
+                var distance = planes[i].Distance(planes[j]);
+                if (distance <= 0.01)
+                    continue;
+
+                if (best is null || distance < best.Value)
+                    best = distance;
+            }
+        }
+
+        if (best is not null)
+            return (decimal)best.Value;
+
+        var bounds = shape.BoundingBox;
+        var cornerMin = bounds.CornerMin;
+        var cornerMax = bounds.CornerMax;
+        var fallback = new[]
+            {
+                Math.Abs(cornerMax.X - cornerMin.X),
+                Math.Abs(cornerMax.Y - cornerMin.Y),
+                Math.Abs(cornerMax.Z - cornerMin.Z)
+            }
+            .Where(v => v > 0.01)
+            .DefaultIfEmpty(0)
+            .Min();
+
+        return fallback > 0 ? (decimal)fallback : null;
     }
+
+    private static (byte Red, byte Green, byte Blue, byte Alpha) ResolveColor(XCAFDoc_ColorTool? colorTool, TopoDS_Shape faceShape, TopoDS_Shape rootShape)
+    {
+        if (colorTool is not null)
+        {
+            if (TryGetColor(colorTool, faceShape, out var faceColor))
+                return faceColor;
+
+            if (TryGetColor(colorTool, rootShape, out var shapeColor))
+                return shapeColor;
+        }
+
+        return (DefaultRed, DefaultGreen, DefaultBlue, DefaultAlpha);
+    }
+
+    private static bool TryGetColor(XCAFDoc_ColorTool colorTool, TopoDS_Shape shape, out (byte Red, byte Green, byte Blue, byte Alpha) color)
+    {
+        if (colorTool.GetColor(shape, XCAFDoc_ColorType.XCAFDoc_ColorSurf, out Quantity_Color surfaceColor) ||
+            colorTool.GetColor(shape, XCAFDoc_ColorType.XCAFDoc_ColorGen, out surfaceColor))
+        {
+            color = (
+                ToByte(surfaceColor.Red),
+                ToByte(surfaceColor.Green),
+                ToByte(surfaceColor.Blue),
+                DefaultAlpha);
+            return true;
+        }
+
+        color = default;
+        return false;
+    }
+
+    private static gp_Pnt TransformPoint(gp_Pnt point, gp_Trsf transform)
+    {
+        return point.Transformed(transform);
+    }
+
+    private static gp_Dir CalculateNormal(gp_Pnt p1, gp_Pnt p2, gp_Pnt p3)
+    {
+        var ux = p2.X - p1.X;
+        var uy = p2.Y - p1.Y;
+        var uz = p2.Z - p1.Z;
+        var vx = p3.X - p1.X;
+        var vy = p3.Y - p1.Y;
+        var vz = p3.Z - p1.Z;
+
+        var nx = uy * vz - uz * vy;
+        var ny = uz * vx - ux * vz;
+        var nz = ux * vy - uy * vx;
+        var length = Math.Sqrt(nx * nx + ny * ny + nz * nz);
+        if (length <= double.Epsilon)
+            return new gp_Dir(0, 0, 1);
+
+        return new gp_Dir(nx / length, ny / length, nz / length);
+    }
+
+    private static void AppendVertex(List<double> positions, List<double> normals, gp_Pnt point, gp_Dir normal, List<int> indices)
+    {
+        positions.Add(point.X);
+        positions.Add(point.Y);
+        positions.Add(point.Z);
+
+        normals.Add(normal.X);
+        normals.Add(normal.Y);
+        normals.Add(normal.Z);
+
+        indices.Add((positions.Count / 3) - 1);
+    }
+
+    private static byte ToByte(double value)
+    {
+        var scaled = (int)Math.Round(Math.Clamp(value, 0d, 1d) * 255d, MidpointRounding.AwayFromZero);
+        return (byte)scaled;
+    }
+
+    private sealed record StepDocumentContext(TopoDS_Shape RootShape, XCAFDoc_ColorTool? ColorTool);
 }
