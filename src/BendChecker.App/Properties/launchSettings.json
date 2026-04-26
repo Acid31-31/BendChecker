@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BendChecker.App": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

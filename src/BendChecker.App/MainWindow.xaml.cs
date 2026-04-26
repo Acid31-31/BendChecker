@@ -137,7 +137,7 @@ public partial class MainWindow : Window
         RenderScene(scene);
 
         var thickness = await _stepAnalyzer.TryGetThicknessMmAsync(stepPath, ct);
-        if (thickness is not null)
+        if (thickness is not null && thickness > 0)
         {
             var de = CultureInfo.GetCultureInfo("de-DE");
             ThicknessText.Text = thickness.Value.ToString("0.00", de);

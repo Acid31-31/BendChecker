@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.IO;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace BendChecker.App;
 
@@ -8,8 +9,34 @@ public partial class App : Application
 {
     protected override void OnStartup(StartupEventArgs e)
     {
+        RegisterGlobalExceptionHandlers();
         ConfigureOcctRuntime();
         base.OnStartup(e);
+    }
+
+    private static void RegisterGlobalExceptionHandlers()
+    {
+        Current.DispatcherUnhandledException += OnDispatcherUnhandledException;
+        AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
+        TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;
+    }
+
+    private static void OnDispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+    {
+        MessageBox.Show(e.Exception.ToString(), "Unerwarteter Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+        e.Handled = true;
+    }
+
+    private static void OnUnhandledException(object? sender, UnhandledExceptionEventArgs e)
+    {
+        var ex = e.ExceptionObject as Exception;
+        MessageBox.Show(ex?.ToString() ?? "Unbekannter Fehler", "Unerwarteter Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+
+    private static void OnUnobservedTaskException(object? sender, UnobservedTaskExceptionEventArgs e)
+    {
+        MessageBox.Show(e.Exception.ToString(), "Task-Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+        e.SetObserved();
     }
 
     private static void ConfigureOcctRuntime()

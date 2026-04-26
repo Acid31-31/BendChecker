@@ -75,21 +75,29 @@ public sealed class StepAnalyzerStub : IStepAnalyzer
     internal static decimal? TryParseThicknessFromName(string stepPath)
     {
         var fileName = Path.GetFileNameWithoutExtension(stepPath);
+
+        // Require either a thickness marker (t, thickness, dicke) or explicit mm unit.
         var matches = Regex.Matches(
             fileName,
             @"(?ix)
-            (?:^|[^0-9])
-            (?:t|thickness|dicke)?
-            \s*[:=_-]?
-            (?<value>\d+(?:[\.,]\d+)?)
-            \s*(?:mm)?
-            (?:$|[^0-9])");
+            (?:^|[^a-z0-9])
+            (?:(?:t|thickness|dicke)\s*[:=_-]?\s*(?<value1>\d+(?:[\.,]\d+)?)|(?<value2>\d+(?:[\.,]\d+)?)\s*mm)
+            (?:$|[^a-z0-9])");
 
         foreach (Match match in matches)
         {
-            var raw = match.Groups["value"].Value.Replace(',', '.');
-            if (decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var thickness))
-                return thickness;
+            var raw = match.Groups["value1"].Success
+                ? match.Groups["value1"].Value
+                : match.Groups["value2"].Value;
+
+            raw = raw.Replace(',', '.');
+            if (!decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var thickness))
+                continue;
+
+            if (thickness <= 0m)
+                continue;
+
+            return thickness;
         }
 
         return null;
