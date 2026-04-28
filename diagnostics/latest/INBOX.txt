@@ -1,4 +1,13 @@
-﻿AUTO-RUN2 FAILED
-Timestamp: 2026-04-28T20:56:26.6887190+02:00
-
-
+﻿Timestamp=2026-04-28T20:56:56.0077726+02:00
+Branch=diagnostics/startup-crash
+HeadSha=01a1cde9b86405ebca0cca1eaa0bbf30430843cf
+CommitUrl=https://github.com/Acid31-31/BendChecker/commit/01a1cde9b86405ebca0cca1eaa0bbf30430843cf
+BuildSuccess=True
+RunOffExit=-1
+RunOnExit=-1
+meta=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\meta.txt
+build=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\build.txt
+native-files=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\native-files.txt
+run-probe-off=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\run-probe-off.txt
+run-probe-on=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\run-probe-on.txt
+eventviewer=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\diagnostics\latest\eventviewer.txt

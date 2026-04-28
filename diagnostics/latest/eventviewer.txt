@@ -1,2 +1,1 @@
-﻿
-No matching Application Error/WER events found.
+﻿No matching Application Error/WER events found.
