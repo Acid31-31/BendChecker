@@ -1,2 +1,2 @@
 ﻿
-EventViewer collection failed: Es wurden keine Ereignisse gefunden, die den angegebenen Auswahlkriterien entsprechen.
+No matching Application Error/WER events found.
