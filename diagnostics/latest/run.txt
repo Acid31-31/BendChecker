@@ -1,0 +1,8 @@
+﻿
+Die Starteinstellungen von src\BendChecker.App\Properties\launchSettings.json werden verwendetÔÇª
+C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\App.xaml.cs(3,1): error CS0106: Der "public"-Modifizierer ist f├╝r dieses Element nicht g├╝ltig. [C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\BendChecker.App.csproj]
+
+
+Fehler beim Buildvorgang. Beheben Sie die Buildfehler, und versuchen Sie es anschlie├ƒend noch mal.
+
+[2026-04-28T19:26:20.9723828+02:00] No temp diagnostics file found at C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\BendChecker_diagnostics.txt
