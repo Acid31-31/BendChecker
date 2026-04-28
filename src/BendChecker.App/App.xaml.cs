@@ -25,6 +25,7 @@ public partial class App : Application
         EnsureReportFolder();
 
         WriteEarlyDiagnostics();
+        PrependNativeRuntimePath();
         ProbeNativeDllLoad();
 
         ConfigureOcctRuntime();
@@ -105,10 +106,31 @@ public partial class App : Application
         }
     }
 
+    private static void PrependNativeRuntimePath()
+    {
+        try
+        {
+            var nativeDir = Path.Combine(AppContext.BaseDirectory, "runtimes", "win-x64", "native");
+            if (!Directory.Exists(nativeDir))
+                return;
+
+            var path = Environment.GetEnvironmentVariable("PATH") ?? string.Empty;
+            if (!path.Contains(nativeDir, StringComparison.OrdinalIgnoreCase))
+                Environment.SetEnvironmentVariable("PATH", $"{nativeDir};{path}", EnvironmentVariableTarget.Process);
+        }
+        catch
+        {
+            // do not block startup
+        }
+    }
+
     private static void ProbeNativeDllLoad()
     {
         try
         {
+            if (string.Equals(Environment.GetEnvironmentVariable("BENDCHECKER_DISABLE_NATIVE_PROBE"), "1", StringComparison.Ordinal))
+                return;
+
             var nativeDir = Path.Combine(AppContext.BaseDirectory, "runtimes", "win-x64", "native");
             var tempPath = Path.Combine(Path.GetTempPath(), "BendChecker_diagnostics.txt");
             var outputPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
@@ -124,22 +146,33 @@ public partial class App : Application
                 return;
             }
 
-            var dlls = Directory.GetFiles(nativeDir, "*.dll")
-                .OrderBy(Path.GetFileName)
-                .Take(5)
-                .ToList();
-
-            foreach (var dll in dlls)
+            var probeDlls = new[]
             {
+                "TKernel.dll",
+                "TKMath.dll",
+                "TKXSBase.dll",
+                "TKDESTEP.dll",
+                "TxOcct.dll"
+            };
+
+            foreach (var dllName in probeDlls)
+            {
+                var fullPath = Path.Combine(nativeDir, dllName);
+                if (!File.Exists(fullPath))
+                {
+                    sb.AppendLine($"MISSING: {dllName}");
+                    continue;
+                }
+
                 try
                 {
-                    var handle = NativeLibrary.Load(dll);
-                    sb.AppendLine($"LOAD OK: {Path.GetFileName(dll)}");
+                    var handle = NativeLibrary.Load(fullPath);
+                    sb.AppendLine($"LOAD OK: {dllName}");
                     NativeLibrary.Free(handle);
                 }
                 catch (Exception ex)
                 {
-                    sb.AppendLine($"LOAD FAIL: {Path.GetFileName(dll)}");
+                    sb.AppendLine($"LOAD FAIL: {dllName}");
                     sb.AppendLine(ex.ToString());
                 }
             }
