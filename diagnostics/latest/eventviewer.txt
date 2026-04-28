@@ -1,0 +1,3807 @@
+﻿[2026-04-28T18:22:19.8192659+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c54e88e1-43bc-4641-a8bb-454a1c803a13.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d9099b26-f0c7-489e-a30f-956a522fa9ce.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d2223eb0-86cf-42d8-a37c-5946d0561cc8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ae5ed279-182a-4d65-b55d-f784a28a5b37.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b80d9a1c-8a3b-4e5f-bcd7-cd39309b4eea.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_158e782f-dc57-44e4-af49-f2ac5d77848d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 70f81c8b-bb6b-4e17-882a-83600152c4fe
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T18:22:14.7754602+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x3FE4
+Fehlerhafte Anwendungsstartzeit: 0x1DCD72B2B08221B
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 70f81c8b-bb6b-4e17-882a-83600152c4fe
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T18:20:20.4583209+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ec4df714-0c1e-4358-bf09-f765513291d0.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4bed0778-6591-43aa-9c75-b708ccd4f182.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.33de751d-19a7-4968-92f3-ed82d31f8a94.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.529f564b-417b-457c-a07f-8853c1586528.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9ccb8f24-9b88-4671-a6e1-cc61514318ed.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_3d5c2897-747b-44ef-93f9-447141408736
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: a61c0ce5-b5e8-482d-ab5c-4b1b825be3d5
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T18:20:14.4937830+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x110C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD72AE1DFE9B2
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: a61c0ce5-b5e8-482d-ab5c-4b1b825be3d5
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T18:12:50.4187887+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a58d87c8-6aa1-4bd9-8db2-ea52a54abcf0.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e542b2e3-b401-4d74-988d-630bc53d2b64.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c1e7d7d4-8fd7-4ed8-81b7-81d562bd04a6.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cd5638cc-4666-430c-b1f6-62a941ca5011.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9d9973a7-cbbe-46c0-9e67-577eca31acbd.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.73ad70fd-5c44-44f2-bb61-e3ba2441aa76.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.416aede4-9e41-4dde-8bd0-551c1fe6eaf2.tmp.xml
+\\?\C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\WER.5889d373-b744-4ac8-a89a-15fdfa63187e.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\memory.hdmp
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_6dac4b4b-3388-4197-80a0-33fb2eda6a5d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: dd6adb11-ed8c-4634-bc66-c159a04b4d9b
+Berichtstatus: 268435552
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T18:12:48.0987513+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket , Typ 0
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a58d87c8-6aa1-4bd9-8db2-ea52a54abcf0.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e542b2e3-b401-4d74-988d-630bc53d2b64.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c1e7d7d4-8fd7-4ed8-81b7-81d562bd04a6.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cd5638cc-4666-430c-b1f6-62a941ca5011.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9d9973a7-cbbe-46c0-9e67-577eca31acbd.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.73ad70fd-5c44-44f2-bb61-e3ba2441aa76.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.416aede4-9e41-4dde-8bd0-551c1fe6eaf2.tmp.xml
+\\?\C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\WER.5889d373-b744-4ac8-a89a-15fdfa63187e.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d\memory.hdmp
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_cab_6dac4b4b-3388-4197-80a0-33fb2eda6a5d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: dd6adb11-ed8c-4634-bc66-c159a04b4d9b
+Berichtstatus: 100
+Bucket mit Hash: 
+CAB-Datei-Guid: 0
+---
+[2026-04-28T18:11:29.0177679+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x71C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD729A8949D94
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: dd6adb11-ed8c-4634-bc66-c159a04b4d9b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:42:48.4420727+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.34c1e421-d4b9-413c-821b-c7c2fe641d07.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7d4e289b-e782-439d-95e3-5bb9153fee74.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c31957c1-10c7-4b7f-8fa5-6c5bb851c282.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.99404c4b-c182-42e5-a034-f8b1727ba072.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3701beab-547a-49d1-b909-98f7f47d7767.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_84e3efaf-2abe-45da-ba8c-eb0c0b0c48b5
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 17a1a2b5-b214-4994-9ba7-4b96927a1ff2
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:42:42.1795865+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4EEC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD725A3661746
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 17a1a2b5-b214-4994-9ba7-4b96927a1ff2
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:34:15.1541937+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fbc4fcf1-4a53-43b3-9a46-5381a8ba41dd.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b91e5949-34ca-4ba8-ad92-e4bbd69683c8.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e28dcc28-60f4-4367-9975-37faa52b7257.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8d68ab15-f998-468e-997c-a82e94f6eb41.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b8a7f3a2-88e1-489c-8963-07baa5c970eb.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1b653161-5378-4c6a-8156-ace7960b9543.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0bfa0dff-4422-4f4c-86ff-f1b878908a7f.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_17bb0c8a-8221-42b0-925c-dd70f673b623
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 466a4907-9d6a-437f-8546-e71ba098a13d
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:34:07.7213509+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6CAC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD724715EA857
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 466a4907-9d6a-437f-8546-e71ba098a13d
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:26:07.6552922+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1e917cd2-20b3-478e-8117-1fa3cf191155.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6ba940fc-5e88-4262-a0ae-1ea3c873104f.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e1f0d4e4-217f-4a83-9710-ac23b4484953.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e29ecdce-5fc1-4065-8e0a-555c0b440b1f.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a0d8c84d-0414-48e1-99a4-0351c32af191.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a7fa96d0-e1e7-4691-934b-c6adecfcd000.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b0b3ecdb-e062-477b-a626-6a8a134c117f.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_2f637f65-bc40-4fc6-8e85-691c353d5d32
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: c12d1725-1d92-47f7-a48b-d2e844edfe01
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:26:00.7131320+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0xF64
+Fehlerhafte Anwendungsstartzeit: 0x1DCD7234FD3D5D6
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: c12d1725-1d92-47f7-a48b-d2e844edfe01
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:23:02.9125833+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c8269b48-5c6c-49d5-b6c2-c56bd6989474.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9de79cfd-6385-46b7-a568-a612d7d5a84d.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.14caf9f0-d2f9-4b03-a24a-fecfb1817510.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.29075e95-5e8b-46f9-92f8-12dea31f8aa2.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.21c6e3cd-b5f5-4dbe-a075-14d2627461e6.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_b6ecfbcd-8fdd-4dd5-96ac-ef4a1ae57d33
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 695f5a95-6242-48cb-9a7f-accf3d6ad045
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:22:56.6531403+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x1410
+Fehlerhafte Anwendungsstartzeit: 0x1DCD722E0CD7E5A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 695f5a95-6242-48cb-9a7f-accf3d6ad045
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:16:08.1373576+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.84e4c8b2-ee3c-427b-8e81-a9a17d820719.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5e3c0031-04de-4995-ad5b-cc0d3c48c541.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.bcb26f1f-6f0d-4f12-bf1d-6d61d6c8bd43.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.94fba62d-e69a-40ab-b463-127ed0e8ca1b.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e185331a-4af3-4a2d-9326-e5efab365322.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6c3feaed-84a0-4040-92ef-ac7e46c9fb96.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2f44ba03-531c-44db-9bbb-8f00c09b6d2c.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_eca6c613-a859-41d3-abaa-8f26958ad192
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: d4c500a2-bcdf-4032-8740-88517f783bcd
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:16:01.4413720+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x51AC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD721E96F0D14
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: d4c500a2-bcdf-4032-8740-88517f783bcd
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T17:00:43.0547211+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ad6eac37-aefb-4ccd-b7c0-8aab65875cf4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3b21c0a0-4ee3-4e86-b826-140d988cf02d.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5613f0f7-001b-4251-bb0a-e0d8ecf8a588.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3365e45d-95a6-43e0-b631-f9956f4ba9f7.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b7945cbd-523b-4e82-900d-31012999dc34.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.83ea2137-83ba-4769-970b-679ee622f983.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2b77c5fd-d18d-4f15-b579-e935f034ba4e.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_8e1111a2-f9a0-4a9a-9b2f-ca9185619ff0
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6e340d7c-fba7-42a7-bde6-e8381e215d6a
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T17:00:22.4946073+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6554
+Fehlerhafte Anwendungsstartzeit: 0x1DCD71FBB0FFE8F
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6e340d7c-fba7-42a7-bde6-e8381e215d6a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T16:57:40.2066435+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.756e3098-6eb3-431e-aa5e-8fc435ccae55.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.42025646-efdf-42ba-a05c-0694514d5ea7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7df8465c-d6b5-423d-b3d3-4bdc8487350c.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4876aee7-c904-40d6-a0e8-3318a489af56.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e6e17d62-e8a5-46ff-8170-5b1ac00fe426.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_99fd31bc-696e-45f1-b42a-8c07370c8fb5
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: d1dc604d-e6af-4362-920d-550ace155bc6
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T16:57:34.8103329+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x77AC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD71F562A44B1
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: d1dc604d-e6af-4362-920d-550ace155bc6
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T16:48:58.6985214+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4007403d-88c9-429f-b586-bcd649e4d165.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.98a36536-89ce-43f7-bdd2-9cd42a5b5c3b.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.979b21df-6544-4a36-95f1-31f1be5c7bf6.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.34ca3d10-9e6b-4863-8ad0-31d03f7d00e5.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0a80bba7-c093-4965-9cbc-47b8568cb71b.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_ef61e282-31ef-4b52-8b50-d9235598eced
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 3fc5e250-49bf-4c0d-a943-a2cc96105e85
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T16:48:53.2636152+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6CC8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD71E207A4786
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 3fc5e250-49bf-4c0d-a943-a2cc96105e85
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T16:47:36.6120143+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.97805681-77a5-44f3-a59e-a0904e55db8a.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0176387c-c541-4b1f-b98e-3257de3c9937.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f3b71080-965b-4fc8-9a4b-8fcc58d149ad.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.17f9ed30-1d14-45bb-8e2b-dffb7350e3f3.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f19ded27-9661-4a42-a62b-4903d4c7c267.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f810edb4-8e44-494f-b612-023b697a89a4.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.31649c01-6ad5-4afb-bc5a-fe3da1564c27.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_7d8c08eb-b1a2-42b0-a0a8-cd20b478cc69
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 8c3dda9a-58a7-40cb-9974-4a6a768f776e
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-28T16:47:30.3087622+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x1C8C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD71DEDDB0450
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 8c3dda9a-58a7-40cb-9974-4a6a768f776e
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-28T16:38:22.4295946+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1838440506215805115, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_91ff
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0eda1e15-f48d-403f-b9a3-542de97a3883.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9b8bcb3c-90e9-400e-855f-f3e37aec4c35.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.87bd653a-f7c2-4282-b5f6-ebd41e9e14ac.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.269af822-1331-457c-88c0-ca7a4cd0a558.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ff244285-a4fa-408e-b097-fb6c61e07af8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4f8b80d4-6f29-4a54-8cb4-a8c9e1edad43.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f5567a17-259b-4d09-b670-e03e16b9160c.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._fcc3946011936093583b2d6cf474965b3e46636_184faaf8_9740d915-ff89-4c7b-a412-9306a5752eeb
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 61d52cfa-d401-49fa-9a74-424452e45e6a
+Berichtstatus: 268435456
+Bucket mit Hash: 8763fdba44a3028af98373e661aeb0bb
+CAB-Datei-Guid: 0
+---
+[2026-04-28T16:38:16.4539184+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2CF8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD71CA3D2DAFD
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 61d52cfa-d401-49fa-9a74-424452e45e6a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:45:21.9937972+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5658c584-2a8f-47b8-86fa-b24c7ef2d13f.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.83e36789-53b7-4fbb-8fef-c98605102c45.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0f078198-b128-4203-9422-d07c253c4c42.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1849a833-c101-4ef5-885e-038fdd92fd50.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.befbf4f0-c7dc-419b-837d-8a63cdeac156.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8fd80955-ec69-4c1a-aed8-c693182bbe45.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.015119a6-0761-4b75-b88e-2cee1b929c13.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_a292a489-1c5c-41c2-a95c-8da3abbb22ab
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: b476396c-2f74-4b58-a331-7e55b1f1b26a
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:45:15.6501026+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6360
+Fehlerhafte Anwendungsstartzeit: 0x1DCD675FA118691
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: b476396c-2f74-4b58-a331-7e55b1f1b26a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:33:03.1844599+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.896d8da8-82f9-4e50-a05d-790c05ac335b.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cd2e8495-1f23-462e-91cc-561ec740a464.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d23804a5-da8f-4419-9202-ac93b5a97193.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9ec08843-3e78-4560-a01f-21cd76178097.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e14acde2-5274-47d9-a0c0-7281527f5c2d.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_1051605e-8b73-42ef-8e0d-6ec67e9d2c53
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: ff87677c-d7df-4b29-a264-d22131c981c6
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:32:56.9340322+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6090
+Fehlerhafte Anwendungsstartzeit: 0x1DCD67441628A2F
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: ff87677c-d7df-4b29-a264-d22131c981c6
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:23:16.0972331+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cf3b7bc8-b4aa-4cbe-8764-8c0fdbfe04d6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7baee5a2-82a4-4034-88ea-fd7bfaf6ba27.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f6cf7bb6-b59a-4c6d-8b2d-35afadd73eea.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.85efaab5-9ca0-4c57-bc08-8b250c8a23da.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b9f8949f-7192-46b3-928e-8db1f2e5c98c.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_7dc0c443-8415-433c-b5d2-b2d157a7c828
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 81aa11ab-0917-48ca-b4bb-5e27c492e8fa
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:23:09.4084572+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4540
+Fehlerhafte Anwendungsstartzeit: 0x1DCD672E32A7E67
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 81aa11ab-0917-48ca-b4bb-5e27c492e8fa
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:18:02.3016084+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e3d06837-eb90-4a18-ac66-dd59ecdc3dc4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ee8f70eb-c171-460d-897b-563b02e81347.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5c38555e-efbb-4687-90d0-16d96ce8d5fb.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0609f83e-c121-41b7-97a2-708698cc2ead.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a8a0f7e0-0913-4e00-b260-744b341e7436.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a39a094c-a1e8-4e32-848f-d7d55b73f2d4.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.050a72a5-6bc7-440b-9b64-5c47bc4fc572.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_1d0a65ea-a9c3-48ad-8fb1-a7f7f87e708a
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6dc630d7-4a3a-460f-b850-aa95802d3e05
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:17:54.6183052+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x662C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD67227B3C832
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6dc630d7-4a3a-460f-b850-aa95802d3e05
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:09:05.0485018+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.31a57506-decd-4bda-a123-5cedf18484f6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b5683139-1198-4fff-aa51-6329c90c443b.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9640aa72-02bb-4572-a0a1-a68d3deedead.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.78ce34fd-af44-4d54-bfaf-7f5b32fb7bee.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7f9ab57a-3787-49a3-8ee5-d8dcf87f6c5e.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_fb6e693a-1b26-459d-b74a-d252f19c55b4
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 1011bfc7-cda0-4eb8-9694-4b124af883b3
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:08:58.9228648+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6FB8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD670E726181B
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 1011bfc7-cda0-4eb8-9694-4b124af883b3
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T20:02:57.8935150+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1f9dfa2b-fa9a-4360-89e4-e7ff22241c76.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5e1e5da9-4d82-431f-aaca-a8042a3c7526.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3d64b128-87d3-42c0-aa04-022323e80a72.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6ddd9dfd-940a-416e-841e-55725044e5cf.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4d3a54a3-6ba6-4a80-af6b-eefb0f19904b.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_4a112206-0948-4ae6-8474-39b5af38f9b6
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 4474fbc5-a96a-4255-b146-fcb9bf37476b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T20:02:51.5283083+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x93C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6700D638CEF
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 4474fbc5-a96a-4255-b146-fcb9bf37476b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:57:18.3942795+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e57f4fb3-71b3-44df-b749-92db3a4e1de5.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6cbe2e16-0295-4af0-b2a7-fb9003e82932.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2128513d-93c7-472f-81b8-bd28dd77f50b.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.84a8158c-0340-40a3-be14-2534f3049fbc.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0cdbb609-2b3b-47f9-afc4-5c0d6ce63d42.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.51efce6a-8cef-4ed5-af3b-d38eda8db29a.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8da728dd-204d-4364-9181-79ab56a413fd.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_b8f93c38-714d-4121-b8a7-1840603b2bcb
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 3ad79719-c1d4-4c23-948e-becd34c018db
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:57:11.1298917+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x3144
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66F41AB7603
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 3ad79719-c1d4-4c23-948e-becd34c018db
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:50:08.4206470+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f063bf27-9021-4970-81dc-6152f7e38c6c.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b44d4937-0e36-4176-96b1-85b9687362cd.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a3d98a39-4852-4dc8-85f8-a9abd22f7276.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2f0ba95f-c321-4c00-a69b-3496f2931c30.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5aae385c-2c98-4787-9b77-bca8c11623d9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b7c55199-93e6-4259-a334-0f79b3fa95b8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.20ac9def-a91a-426b-b83a-d20790ff48ab.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_bf5e61b6-92a5-4de9-8d0f-a066f467e395
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 96d542f1-ee43-40d7-a177-f42ebc276923
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:50:01.6127119+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2DD4
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66E4356410A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 96d542f1-ee43-40d7-a177-f42ebc276923
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:45:01.4840573+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.747041d5-5361-4854-b9c0-38d41c5c298b.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.29da7cbf-4a25-4c2a-ba52-c47f1c3f6c1d.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.645487e2-3f61-4a88-bf62-9207141ed6bf.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7c11b13d-d688-42b4-b9f3-5dafbad8cf01.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.68bedc3f-6b96-40d4-8ac9-3c9e9d9e2d4b.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_dde8f946-2c58-4c0c-9c80-40d8f5e2fd67
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: e473a5e8-3b76-4d9f-a9d6-06b4593911e0
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:44:55.2449893+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6E20
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66D8BD4AE74
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: e473a5e8-3b76-4d9f-a9d6-06b4593911e0
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:35:18.0804147+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5a35e553-2395-4afd-8c55-bac5699f8581.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.69f482bc-fbe9-43f5-b820-d3734c878290.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ebbcddc7-848e-4342-a988-137728dc0568.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.775d6a9b-d546-49ef-83db-0bd9ebece96d.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ea5c4846-03ad-416d-886e-c591e92715e6.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_8f233f4d-821a-4b23-a111-0f1f42a668a8
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 32c9304a-6490-477f-87f5-d0b16397f35e
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:35:12.7440786+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4548
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66C30EE552A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 32c9304a-6490-477f-87f5-d0b16397f35e
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:29:43.3540083+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c0aa59a6-21ed-4caf-a0f6-6f1fae613340.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.606dc663-5b62-4f3e-b34c-7b5131e8beb1.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.64aa69a5-a3f9-4106-81c4-bac805851c14.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.832c9330-4f06-4c84-b455-e4b4edb0cde9.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.77166c14-aefc-4b56-a6a4-cb0b127ffb32.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c06ddf45-5607-45c9-9113-f40d13d07f3b.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d665680f-621b-4477-a3d0-d0190b1225a3.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_f36a0268-85ed-4555-b6f2-57573e4ce8ed
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 53ad5eea-5ff7-4aa6-a0df-01d9903ca37e
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:29:37.0849462+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x152C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66B68654666
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 53ad5eea-5ff7-4aa6-a0df-01d9903ca37e
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:29:13.9660137+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b16ff633-05a3-4155-a096-d9e4deb8b9ff.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0dc0da65-bb8d-47d6-9859-6246b18c3cdf.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b996d80d-1663-4a07-bc94-2a09aeef4e5c.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.268d24bb-95aa-4488-a6a5-21fb91b6d604.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.06b303c7-7055-4ffe-974d-3c05ec3d051d.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c24e22bd-fe52-43aa-85c1-b801552cb682.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.eda77a12-3545-428a-88d6-fcf42b3c8fa5.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_4ab53303-749a-43ea-83f5-e59b63aba742
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 271452f5-8c48-44ea-b9bf-cee2d6f40352
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:29:06.6793361+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2360
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66B57AAA519
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 271452f5-8c48-44ea-b9bf-cee2d6f40352
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:27:38.3028427+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.20abef4b-201a-4ffe-a8ec-56d0e30864a7.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.397af6bd-b00c-4e76-bcd3-ad3b3675d41d.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71a462b2-a3b2-4c60-b65f-1e11396a2eb0.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.49b48928-8524-49a5-aaa8-124eab0344e4.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3a4c15a7-36d2-42c1-9486-e4b3bc0018e6.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_5e52a9ea-af66-413d-9dfd-bb03eea6b62e
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 7c06da6c-1241-4ce8-a598-48262c956f88
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:27:31.8960067+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x11F0
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66B1CF4FF5C
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 7c06da6c-1241-4ce8-a598-48262c956f88
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:14:55.3634618+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0ee8bbc5-5bfe-4502-b1b7-4ac97fa7f056.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d28de999-7032-45f2-bc87-e2acca91d829.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1ec8dbc5-01b2-4025-9fde-c834fc224d39.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.da42bfcf-363f-4399-9715-1739701486d3.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.83bc1a82-b5d3-48cb-afc5-2079549b8151.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2c392fec-acad-4c60-b456-bdd8d34162a3.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.dedb4422-e609-41e8-9310-c957ef8b1b67.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_47beca0b-7323-44c8-a688-321941689e41
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: bd5971cf-3bc1-40c9-864b-cfa502d8dd3d
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:14:48.6947321+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2EEC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66956DFE15B
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: bd5971cf-3bc1-40c9-864b-cfa502d8dd3d
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:08:55.3063945+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.87b21531-d3f0-41e7-9134-f649546bc048.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6911e588-90f2-49fe-a2f2-12b89ac9139c.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c0a14dae-cc91-4a37-a942-3e764fe905ec.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2cf66a1c-6217-4ff5-8a47-f1b4f57a62ca.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.59047d33-7199-4c71-9dc5-9d8b11c17700.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_b3a97cc3-f7ec-44b3-baea-b6d323f28e41
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 10e610bf-08f2-4dd3-973d-9abd273e9493
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:08:50.7108061+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x68B8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66882BA1D4A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 10e610bf-08f2-4dd3-973d-9abd273e9493
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:07:46.9992801+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.904be50f-c225-43d7-a14c-d733cb515214.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7dbdb9d6-bbb7-42bd-88da-03b8e7d7e068.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.10a6c9e4-23ad-4b19-9b9f-a8dbeabd2455.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.093513cd-bba5-4ec5-9a09-7d7f9a016af9.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cf1504ff-649c-48ca-b0ea-e02a18a06e23.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.444b4b73-178b-45aa-9f83-deeae5057376.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.69d5d9e6-d541-42c3-a2d5-4fc297776cdc.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_9cc34329-6091-4467-9077-fb2b0e9ded9e
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 36a9a296-6794-459b-8cdc-342e7d580c1b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:07:41.1803609+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x483C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66858D173CB
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 36a9a296-6794-459b-8cdc-342e7d580c1b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:06:42.1700581+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.24b95133-f277-434b-a041-d79c1664055f.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d13cc16a-db1b-439e-9537-c83e27be7001.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.60740ab0-1a16-4333-856d-3837e6a88aca.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b3f083c2-4fc8-42f8-b636-893982323c4f.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.21220aa8-a074-4fdd-950b-71a2f1c9e1d3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.856fabf3-bcb9-4a81-a3ee-68b0bd21bc1f.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c4c96319-ddf7-4fd3-8dbe-fb5fd22a9f03.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_363fbf8c-1370-4b96-b1aa-acba5c68b927
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6ade4ef4-4c9a-456d-ba4d-caedb72e7126
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:06:37.1548668+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x675C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6683364A07A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6ade4ef4-4c9a-456d-ba4d-caedb72e7126
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T19:03:27.4922955+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8d74b72e-d4a7-4eb7-8752-b6c8c7e4f082.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.61f00cf9-4358-4732-a02d-02bd2a596565.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f9c2fb67-4893-4a2d-ace9-597ca6a379db.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4517dc10-be08-4ad5-9152-888a212a1f18.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c178cfc9-5031-471a-bc20-ce0ddc19a34b.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c867b3bd-1701-4280-a753-b3590475f14c.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a6d243f6-7d76-480d-8a2c-fb7206d39d68.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_ebc074a8-7405-415d-98f6-3027f3adf5dc
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 8028b792-4075-4cd2-aee7-01618330c1d3
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T19:03:19.6160931+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x7D8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD667BCEC1DE4
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 8028b792-4075-4cd2-aee7-01618330c1d3
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:49:01.9805591+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7bbe4c3b-9098-4ebd-b1e3-b850335b8483.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.48fdf0d2-c4a8-47b5-b5b4-1b6801bfef0c.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a6ad9803-1db0-40cc-8b29-170c1f4ba833.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e856606b-004b-44f4-8463-80e4e013aa14.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6a793a4a-0c82-488d-a4cc-89b1f7497f64.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_375e8d8b-39db-42f0-9e6f-1140f5e594e5
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 91d2d6a0-a6ea-4024-875d-60518ff9d7d3
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:48:54.6415744+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6CA4
+Fehlerhafte Anwendungsstartzeit: 0x1DCD665A8130E4D
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 91d2d6a0-a6ea-4024-875d-60518ff9d7d3
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:48:50.3937105+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d1b2474e-7daf-4b45-920d-ccaa2afb289f.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4c689f5a-c55d-462e-b87f-1b9f9d4bec80.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.652dd12c-3331-41d3-a562-f9a9532731c8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f00e292c-c318-417f-9c8f-c701252cb3d0.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b72f7812-c379-4873-b55f-3a78ae687ded.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_86cf3b1c-6be3-45c0-a0ac-96f81b4f1995
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 48fe0c70-badb-4b25-a7f0-4318b6914544
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:48:44.1575790+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6C40
+Fehlerhafte Anwendungsstartzeit: 0x1DCD665B1744437
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 48fe0c70-badb-4b25-a7f0-4318b6914544
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:44:02.4058821+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d6e1a72c-d159-482a-8626-041ae707a0ba.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.97a65c61-aa0e-4f25-8995-d0b4b3d1a73c.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.18bfe8f7-c017-43b0-9d21-2bebf549bc93.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b56e8034-89e3-4bea-bf0c-ad96355a0c85.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.047b8eb4-f990-4a68-a51d-bc58bb8c9b41.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_021ed847-437d-49c7-893d-f8b797f32906
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 97caaba1-3d38-437b-91f4-ac4741250087
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:43:54.0738159+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x1428
+Fehlerhafte Anwendungsstartzeit: 0x1DCD665051DF9D1
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 97caaba1-3d38-437b-91f4-ac4741250087
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:39:21.6482939+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1396eb0c-2116-4075-a24a-dd6a77649306.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1ae7728d-e67d-4466-b1f9-0d3aade5cde2.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a42e6864-6cc2-4a86-ac2e-d924e5c56e13.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5311d03d-923f-423f-bf85-1eeaed6a1d4f.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7e5ede3d-be11-4ebe-9923-9a05f978c6fc.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.26d441f0-17bd-4e40-909b-81d80b27cf8b.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.57ca92b5-70e9-483d-bcc1-285aca3ac3b1.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_47fb1859-75f3-41ef-ab74-21723a1f6797
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 0d7c5b91-d04a-4c55-a5cd-4684d0ad5a91
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:39:14.3082485+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2F88
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6645ECCD303
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 0d7c5b91-d04a-4c55-a5cd-4684d0ad5a91
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:35:28.4036110+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4181be3c-4d06-4a68-a96f-34ad3d630ebd.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.264b2f4f-db87-4dcc-ae4d-3d7a64b365b1.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f33c3a9c-7aaa-4a90-8f70-dcf2bace7ced.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6a1a153c-7f87-42d2-b4e6-39a5c7350a7f.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0776e590-ac5c-45cd-a7bd-c79930b8922a.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_183e3c83-e2b2-436e-8d3a-818a80c23dd7
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: f3a7a7f3-f0f5-4ddd-bae1-cd6eecd1459b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:35:20.8243557+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2DEC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD663BCC1100A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: f3a7a7f3-f0f5-4ddd-bae1-cd6eecd1459b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:35:15.6596519+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.09e76436-ed42-4fe7-99c0-82c2b525eef2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6ce303ee-7c70-4389-82f5-19ca67223625.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9b82f30-aa06-46c5-8843-190cf5239208.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.18703538-dee8-4ac6-809b-06c1992a93b8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5fcfe79e-0746-4d32-bd16-0f6076cb7167.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_b400f973-1ec5-4078-a5b0-f3549d870dc3
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: d278fdb0-e0d5-4289-9a7f-a42c2970c17b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:35:08.2288811+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x694
+Fehlerhafte Anwendungsstartzeit: 0x1DCD663CBB57588
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: d278fdb0-e0d5-4289-9a7f-a42c2970c17b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:31:42.8249468+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.72dbdd40-7a1c-4458-96c6-5eeb684c3e0e.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9b6ce775-3edc-4bc7-951c-54e3b052dc87.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7a704a65-2f6e-4394-86c7-5272fc8ab2b8.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.06e54f07-3749-4096-8deb-ea177e159b8f.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2a625143-8634-4902-b4e2-56c551a9fab3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6478b298-0222-4beb-87ae-e7ec731735d8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ff153687-44ed-47d1-ab79-d90796246e3b.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_0eff2229-f7c6-4aa5-8cf6-ff2b3ec2c0a3
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: efc96286-35ef-4f7b-8a60-3df6c2bc2b42
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:31:34.9071321+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6888
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6633CB12E8A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: efc96286-35ef-4f7b-8a60-3df6c2bc2b42
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:31:31.0692194+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3123ba26-5523-4027-9a7d-83466004ca1a.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.69484c34-7592-45bc-a843-e24e7281b235.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3f84dda0-6e35-483d-83dc-f00bf41aaa7b.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7e3946b5-a4cf-4a11-b5dd-3f0ee96be0fa.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.50597296-d86f-464c-879c-00e1284530fc.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4f49a28c-aeba-4150-aff1-b383ad355702.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.15a42e8e-533b-48c5-be84-2e96619df93c.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_1afffbb1-332c-429a-b3e8-6317686644f4
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: b8b26f74-6b7a-4578-b2bc-9f21dc48fed1
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:31:21.9240005+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4D60
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6634534EA60
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: b8b26f74-6b7a-4578-b2bc-9f21dc48fed1
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:29:24.0781920+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f4ef7fd6-803a-41c2-a978-dc5079126289.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.532b34db-8f24-46df-81c7-76ab0d34a7e2.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e8b7bb18-e306-4946-a88b-84e1032701e7.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1d55a04a-449d-4e6a-b5a0-890398bfd4fa.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7b82439f-90f3-4309-a7ff-52c790a60eda.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.96ec4b5f-317e-4977-9cf0-c0ca095ce9e1.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e6d767fa-ce86-4701-b8cb-58fe04f490e8.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_f59d9647-0a71-4bd0-a54a-eef338806073
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6b59e235-bb4e-4e7c-9928-73c34f6da44b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:29:16.9073634+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2E58
+Fehlerhafte Anwendungsstartzeit: 0x1DCD662E2CBD40F
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6b59e235-bb4e-4e7c-9928-73c34f6da44b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:29:12.0082421+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.feb36b66-d60b-45cb-800a-d272eef48677.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.efe722b5-eaed-4026-b4b5-ddc5faaeea8f.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5e5889af-119e-4d84-92d0-c790ad52a0e3.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5f935944-3061-4451-988a-0fe6c79d5107.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.914502a9-c2b5-49ee-86ad-8b0fd913d65d.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.516a0e3c-2c8b-4917-8e3d-82034ca045a9.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.62294f0c-aa13-407f-9f2a-1f54df278ae4.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_e8eb18ec-a9f1-41c8-8867-f9c60497556b
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6b032328-3cce-4c56-8a18-d89aeab4f2b7
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:29:05.2650639+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x37A0
+Fehlerhafte Anwendungsstartzeit: 0x1DCD662F394CCF0
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6b032328-3cce-4c56-8a18-d89aeab4f2b7
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:24:53.0242018+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.888152fa-1510-486a-8a07-10463cecc128.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9a648a3c-4867-47c0-b808-022c687dd602.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cee2d2aa-f9ba-49c3-80e0-769bf5ccfcc6.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.eee65012-bf25-45ac-b07d-3f3ee9848af1.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7d47cc4f-c464-4ef8-9423-ffe273875419.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_8cae7e20-0b4a-4df7-a37a-23883e74cc04
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: dc78201e-618a-492f-ae25-f2798a3c3303
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:24:43.8956977+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2E14
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6624358A23A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: dc78201e-618a-492f-ae25-f2798a3c3303
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:24:39.5022018+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.427e7623-49ba-434a-b040-33d428bab8ec.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8eea17b9-b01f-4a05-a281-4a11fbcf5a88.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.514429e8-44bd-45b0-bc56-482e9458d8aa.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.48ac093d-0938-48e8-bf42-22a4dec072ea.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d90f041c-48a9-4bf6-b2a4-83779e2b2494.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_7bfc3fdd-807a-4b0d-a0f8-16c18e51084b
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: e962b7ea-01b2-484f-8bf8-e840441bfa48
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:24:32.8529084+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x66F0
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6624F713268
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: e962b7ea-01b2-484f-8bf8-e840441bfa48
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:23:04.8495193+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6e21c2f3-27c3-4b42-997a-32da10e91eaf.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.89cf6b9c-6c39-4807-9fa5-7978a727b78c.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ef375439-307c-4052-8905-900d6d297540.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f6a62d6a-2f3f-4f51-b8d3-cff46a3f99e8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2c81f80a-4c81-4b9e-b1af-38ee54b97991.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_584fb306-35de-41a1-929c-7d23c4519ef8
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: a5ca7f41-78d8-4dc9-8c95-f2b7b67b9b9f
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:22:57.1184980+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x67C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66199102D36
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: a5ca7f41-78d8-4dc9-8c95-f2b7b67b9b9f
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:22:50.9073029+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7817f911-f045-47f3-9656-241841cb6b08.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0116fa5b-656d-4d19-b628-82e2ca008b52.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.db816736-6948-4a5a-a161-f9014072c5bf.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.02517999-f2c8-4ef9-aa27-c71e94e6c1db.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0d7b4195-da5a-48de-874a-1ffeb4442b7f.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.24036d14-986e-4eb8-9db2-101c9bf186c9.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.81839f1c-a057-41e2-ac31-2d55b1cb8bb3.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_d792cc2f-6e8b-4633-b860-a3a3e30fb416
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 86e26592-b817-4473-94b2-edcc9cf5b9eb
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:22:44.3079093+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2108
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66211DC4054
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 86e26592-b817-4473-94b2-edcc9cf5b9eb
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:19:47.2653689+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.42e630c4-926d-42dc-bab0-d916057ab5a0.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d7a2a105-f616-489f-a7a5-70da45087126.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.27b426e0-3ea4-4347-a5a3-b29109fc7cbe.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0155a009-206f-425c-ae69-3e2d6126ad34.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.14513155-1429-4af6-836d-41d96b2e4888.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0d8d8e71-463c-4b6e-9bac-0bfe9a3e7af8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e4c958fa-f0ce-4e51-9692-df592c172c02.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_48c00414-2a5d-4e4c-b315-982b5cee1b8e
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 10c23e39-bfdf-4c6d-8d62-42154b7cec9e
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:19:40.2767823+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4C7C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD661A2B33BC3
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 10c23e39-bfdf-4c6d-8d62-42154b7cec9e
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:17:05.8320442+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.92794e2a-8e4a-49f1-ae6c-b3c3fd006cc9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8aadfc67-fdd6-4cc6-885d-a37b5a4ac898.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d8c904c4-f22d-467f-86ab-e66b0f79ede5.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.dc1c4d06-62ed-499c-8faa-712bf492c953.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a190e3be-f7a3-425a-a5b8-9b15010b11be.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_c9cc39e3-4753-4a72-afe7-57974a5e57bd
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 32ded324-550b-406d-a7b7-8f832040cd74
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:16:57.5703394+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4C4C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD661371E4F93
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 32ded324-550b-406d-a7b7-8f832040cd74
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:13:02.6298092+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b434d5fc-a1d4-4734-8c6b-14e2a0996329.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f2cc72de-a4b0-47c6-af79-c188c4925836.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0fd98500-0222-4ed5-9833-df9a4a9bf04c.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d224e486-6b25-4ab6-94ce-dafed5c991d8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2b004184-ae1c-4ef5-ac1c-636603054fc8.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_eaae0160-cdfa-4385-8b53-4fdcfcb67985
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: c2be9f54-f2d8-4ab6-be94-0fee98192377
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:12:54.8299851+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x33E8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD660995A2496
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: c2be9f54-f2d8-4ab6-be94-0fee98192377
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:11:55.0938927+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7da2e7bd-658e-422a-85f3-bc5058aefd24.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a41e85bc-08dc-4777-8b35-f2e6c25a01a8.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c1438c90-3c78-4a3c-b5e7-8789ffe4b763.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a88cdd7d-077b-48c9-a1a2-592635461c7d.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ac2b8542-73b5-4567-8ae8-efd66bfd6a51.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2c1d36f5-92fe-4719-96ad-dd0ea522a00e.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1cbd897f-3c31-4b29-9e18-3ded538b0267.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_19289d00-01e6-496e-9328-e09acc5f697e
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: c272b16d-11fe-454f-b216-4614a6924b3a
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:11:47.0327312+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0xA68
+Fehlerhafte Anwendungsstartzeit: 0x1DCD66084653295
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: c272b16d-11fe-454f-b216-4614a6924b3a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:05:44.1764875+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b6a31e2f-93aa-405b-8278-29e0497bcf5a.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.20226737-6269-409c-b9a1-3861e31fed84.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.48076d55-2c16-4014-893e-5f057dcf8df0.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.551c74ac-13a7-4355-a6b7-d9d3642e980d.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1d260993-325b-422c-b96b-f57cb585ca6d.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_3b80f1c4-0d5b-444b-bc52-c47847245cc1
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 1b213d28-d99e-4e10-a0e5-cbca67798577
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:05:37.3078838+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x64EC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65FA166FF7F
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 1b213d28-d99e-4e10-a0e5-cbca67798577
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:03:28.4461717+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.abfe3990-d163-4c4a-a885-7f73ae2716ba.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.18d3ba36-c489-4f15-84ec-7cd4cadba769.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.45f24abb-4c06-432c-8642-db1bdbb5e3f2.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.35e6fb55-5769-4e8f-a9f8-9a7694fe796b.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8d1ade68-b7fa-4491-9c49-ac0d5e762c23.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_1c7b910a-8bc4-4318-a31b-1e01b4b5a82b
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 0344db06-f905-4835-b092-f3b6a2d3565e
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:03:20.4163394+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6B3C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65F51A69B1F
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 0344db06-f905-4835-b092-f3b6a2d3565e
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T18:00:25.7238192+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.33ed1a02-a677-405b-9ce4-63e225edd10d.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fdd84245-36e9-4aab-aeb3-9ac2c792452e.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3b7935c2-64a0-414e-919d-5ab3ab420e6c.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.66c8598c-1085-4180-b0d4-fc741f18d59d.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4129fc8f-087d-4d4d-96f3-c3134e1be7cc.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1bb69043-dfce-49d4-a6ff-8f90ea387e2d.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6a5a4c4c-82a2-472c-aead-958e66be29c3.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_2889954d-cd79-4ac5-88ea-86be78463af2
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 20147161-0652-4b05-b5d1-987c9fafaaa1
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T18:00:19.0480554+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6B14
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65EE98FC063
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 20147161-0652-4b05-b5d1-987c9fafaaa1
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:56:15.2974973+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6d42e1ca-d44f-4bb7-8e3e-cf9c6911b049.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2bcff76d-77c8-47c4-a158-d31362b19664.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f71e0b4d-a0eb-420e-ac53-8ab6fcaa8a69.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d005b045-dfe3-408a-9db8-71fc6866f070.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cf383f62-6a06-441d-8cc3-d33b913e9d53.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_ebe46017-0ed0-4ea1-8f85-20593c2d51c3
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 55bbd64f-8fdf-4ae2-a8bb-476824b462fd
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:56:06.2934282+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6684
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65E5129B181
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 55bbd64f-8fdf-4ae2-a8bb-476824b462fd
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:52:52.4933134+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5cc9bd75-3b2e-401e-bd7b-4f205c082ae5.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a94fcaf6-89f9-4705-bb28-384a7ac14224.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d82591a1-7d83-4dd7-8757-9a690ad86866.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fd646cc8-3357-4ed9-a99f-1680ddf872d8.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.bdbceede-f5fb-49cb-a409-b8064348f8eb.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_a109b222-480c-40e7-982a-26a5038bbf3d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: e343ea51-4ff5-45e5-801e-64a62fccae7c
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:52:45.1516771+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x910
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65DD6F62047
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: e343ea51-4ff5-45e5-801e-64a62fccae7c
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:50:14.2356870+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.14904ee9-ce7b-4b55-8b6b-ad80e5a64d29.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5b25d194-1d30-46f7-b5e3-f10ad07c5bf0.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fb67177f-fc07-4422-8db3-a663eb26c5ed.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.53588de1-73b0-402c-ae73-6c03e101ad9c.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7f0244c6-752f-4f63-9a5c-c33173f43a7d.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1d475c5a-3a91-41d1-9e71-38c9ef76c794.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6915faeb-517d-4fad-90a9-006600956f9c.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_3c91ef7b-9211-4ec9-9d7b-6567ad33639d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 0ef017e5-9412-42e6-a59a-042f4e49343c
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:50:04.3542836+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6550
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65D7A7D9B3A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 0ef017e5-9412-42e6-a59a-042f4e49343c
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:47:57.3946637+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71843273-c0d2-4970-8bb3-fdb9f97b827e.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a8926870-6106-4151-a22d-ff35ca977dee.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5266d768-9dad-4c70-986b-a08d769c1c6e.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6d935222-11f2-42c4-9418-18712f518e2e.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.edc5c603-f530-4da6-a443-b96a68516663.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ac02ffd9-2c21-4263-ab77-3d1df4cb9b6a.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fc0b6fc6-cd59-4349-930a-0ee2d95c34bb.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_561032d2-dc4f-46b8-a5bb-84e7e3afb13a
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 0c54aa9f-8164-480c-bf6d-03dd08ef3605
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:47:51.4850283+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6738
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65D20BDBF60
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 0c54aa9f-8164-480c-bf6d-03dd08ef3605
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:41:41.6663004+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.324e8542-6545-42aa-a431-c732efe3e584.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2b3e12c5-dd60-428e-9646-90496bb62d52.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d7d02c40-f1ee-4790-8c3d-30e69b4dbd1b.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.cbe6f74a-de2d-49a2-bffb-3e865fece6d4.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9c47b795-8403-4858-a878-ae6056c728dc.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2fc82aea-8da5-4661-b739-2660e372ecd1.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9af9abc9-71e8-4d4d-b15e-064eec82c4a7.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_631cf233-45b5-448e-b816-cb9ff479ee35
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 887b72ed-87a9-46a2-aeff-b80b235c7302
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:41:33.0232535+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x65C8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65C492BEC18
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 887b72ed-87a9-46a2-aeff-b80b235c7302
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:38:19.2578208+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f46452b1-7d1c-46dc-8e9c-f72e2e3292eb.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.10f50ff6-630c-4616-b8fa-53fdd5f8328f.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.24ca45ba-550f-4d54-9207-3fae309995a9.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9c80ee32-25ac-4d45-b26f-a11247470c8b.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a4e2af36-1bcc-4c05-be0f-1e6d5ed3f6b0.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a782d57b-283d-4674-b93d-400e24255911.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3c94a67f-901d-4b05-b82b-5b99fd8a7a43.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_12994b40-126c-474a-a24e-76780eefa1f7
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 3c9e8e8c-b887-490f-af34-c21058731b79
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:38:11.2451370+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x30CC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65BD07BD8CA
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 3c9e8e8c-b887-490f-af34-c21058731b79
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:34:03.4987930+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0d661756-7860-41ce-b93a-51bbaef4b3ac.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f49754e4-5897-49a0-bde4-4e4d30b98cd4.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8196e3cf-4111-4958-a56a-de3b833cde21.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.30269903-0ae2-4b68-a5b6-a57d3eaa24e4.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5d5e308d-9637-4950-9cba-2463dcb2564a.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5f575724-5484-4429-ac9a-b5c1e905a4af.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c146da5a-0a15-42d9-9fab-50ad4b6aa87a.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_a6936faa-460c-444c-858e-c66bd5f8e59b
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: d6905e77-5816-425f-bb98-071da831a48d
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:33:55.5730503+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4540
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65B363FB4D7
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: d6905e77-5816-425f-bb98-071da831a48d
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:33:07.8507131+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.39f4e540-f35f-4963-ad01-3e044802b06a.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b0dc1624-f570-4ca3-b28c-27d594608c73.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d44983e4-8ba5-46c6-8640-d80b004d9409.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a29458d6-d667-4812-9212-0eb57fab16f7.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.34495a51-1b43-431b-aec0-413b030825c7.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3344d39e-121c-4f3f-b583-d7d44dc36671.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.863c5c8a-ef45-4c06-b249-df31c6a24612.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_e40ceafa-4e79-4a5d-85c8-2f6eb4be7403
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: c40bf3c4-5d44-44ce-8d3e-8cee43efd114
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:33:00.0995241+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4928
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65B16D2A56D
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: c40bf3c4-5d44-44ce-8d3e-8cee43efd114
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:24:46.7375449+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.74d7e376-9b77-4a0c-89fb-3921e6b57c16.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0a04f7e5-7a38-4d49-878c-661fd9bbd8ab.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0dfec202-e4d3-4978-a1a8-dcfb5f9f8c80.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df4ea36f-01db-4380-8d1f-b8d0caaa258a.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.18527bcc-3905-4175-943e-27a1fcb8a126.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0fd9f066-2264-4cb6-b616-1e91c0859e52.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.25a4bd44-03f2-45c1-ab7a-f386fa9c54d0.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_89cfc536-db31-4bed-99c4-0777c35da00f
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 24709cd3-3a6f-4cd8-85a3-719e1c09b426
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:24:37.6588934+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4C34
+Fehlerhafte Anwendungsstartzeit: 0x1DCD659EAD48B01
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 24709cd3-3a6f-4cd8-85a3-719e1c09b426
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:21:46.1346479+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.222525f9-bf4d-438b-b0c0-5d2cdd5016b9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c4501d72-7c63-4934-a95c-ce0a5138b55b.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.708c14db-90f8-409c-a945-2d257d7f7cbe.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.86b98500-a851-4bbd-b692-cd6be2c71b3e.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.64a74452-b6a5-4a9d-bca4-c5bff1962385.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.bab8bc8e-e7c1-44a8-870a-edc9f9d7cb8a.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2367f077-2d78-4a06-93bc-c72fdbb340f6.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_a0f3b04b-cdcf-41e7-8cac-dad6f2b1ef47
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 8d34f782-16b6-47b0-89e9-8a26a20e70f6
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:21:39.9721370+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4B98
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65975CDF405
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 8d34f782-16b6-47b0-89e9-8a26a20e70f6
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:17:23.7896445+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6400e7f4-550e-4ecf-9f65-23395d728def.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3c3ebf13-236e-44dd-ae41-fabcfb0baf46.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6c7b66c1-11d2-4a0f-90b7-d395c96dc2c3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.38982490-99d3-42f9-ab26-fd00baab868a.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d331cf23-f186-4fc9-843f-c87d5fb7a7e4.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_d82a042a-6b51-46b7-b718-e442f33458ec
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 22a92ec8-60e5-4ca1-ac37-13d2c40f8ec2
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:17:18.2132961+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x63CC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD658E714BB7A
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 22a92ec8-60e5-4ca1-ac37-13d2c40f8ec2
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:10:13.2594630+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e2cf6872-afdd-4b3e-b8d6-dc7cf661e9ca.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.92e195e6-0781-40ad-bb10-76fec7721264.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.816e5b59-d7fe-4869-b66d-7482c7827bdb.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.053ddcce-3109-403f-b5b7-6a83b9ba962a.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b383fea4-46f3-4d27-9369-0b089223b35a.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4081798f-43dd-4c43-ab30-9fd75fa59b7d.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6215f0dc-104d-489d-aae0-a9b1da885b11.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_01fa117d-208e-4e3c-ab48-7458fa536faa
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 1fc27758-b7b7-459d-a432-194e3e4db9db
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:09:54.0505004+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4DE4
+Fehlerhafte Anwendungsstartzeit: 0x1DCD657D3418AA5
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 1fc27758-b7b7-459d-a432-194e3e4db9db
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:09:12.6327778+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ea9779e0-746f-4a84-9d4a-e1be72f2b42b.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8fd946bc-2305-436c-bd34-59359c1877b7.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.475a3c04-9ff7-4f1a-8fcf-fc4abe043ee8.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.d9847755-07fd-4b17-86d9-f99f737195b0.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.46c7fe66-0329-44ff-b7a6-6435ec954cf9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.95d21b1e-ba8a-4e17-a8e4-2ef9d64ef955.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.414274bb-1baa-423a-9d09-f0388766173b.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_12165297-2458-401d-ba99-2a8a49490051
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: f3b92687-3a15-451c-bb4d-3196ec846858
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:09:05.1785197+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6BB0
+Fehlerhafte Anwendungsstartzeit: 0x1DCD657C287CA9C
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: f3b92687-3a15-451c-bb4d-3196ec846858
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:05:57.0054765+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fccc6a89-a83c-41da-86dd-25e5533788bd.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.6003659d-ac72-4109-a452-c9415e467b53.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.313ddbc7-4abe-4f10-a270-ec2f52b565f2.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c736c945-be4b-47db-b142-5b3278cdce72.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3a51258a-fc94-41c7-9eb3-c4e455d4bcda.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_2f1607eb-47b0-4760-af82-687703f83593
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 6c14a718-7f8f-4bbc-8d98-31ce526b1508
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:05:50.8089101+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6350
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6573F6BA78C
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 6c14a718-7f8f-4bbc-8d98-31ce526b1508
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:02:05.2948660+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4b1095d3-5156-49e1-a454-5ede93923d18.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.151a2752-e6e0-4e25-9044-87d9ca42ac6b.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4adf621e-0f18-4e3d-917f-eb6ae94913df.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.411af413-18a1-4b6d-9ebe-f400d41675bd.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.461e613a-2ce9-4288-922d-424c24be45b7.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5dae3a08-3b0d-4df4-9c38-49fe398d37cd.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c0c1bb01-2998-4978-b9ae-73f7fb12f935.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_a6bc5bc4-edf4-4213-8a6c-d3c025320a49
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 98daefe7-82c4-4250-ac4a-9a072cca7632
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:01:59.9056992+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x29B8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD656C27CFD25
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 98daefe7-82c4-4250-ac4a-9a072cca7632
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T17:00:58.7971362+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e8cf7e10-f7ed-43a5-9010-9056ede0d039.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ffa02ddd-cde3-4dc1-aeb8-b6285927417f.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.aa50044f-6b54-4ee3-a92d-39edda05cdcb.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.492dabf8-e621-42de-84f2-9a99a710c66f.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a0d21b61-c651-4e10-b00b-a6f573bd141b.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.834c4103-6928-47b6-81ba-c04b86dc9919.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0e6d94ee-54d0-48ae-83a7-28a77940a5f7.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_eed81110-e1ef-4560-944d-49dad87435ea
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 0afd9ce1-7c9c-4bf1-aa5e-e37ea0c0d68a
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T17:00:52.1909163+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x34EC
+Fehlerhafte Anwendungsstartzeit: 0x1DCD656967307B0
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 0afd9ce1-7c9c-4bf1-aa5e-e37ea0c0d68a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:56:40.0502177+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1083e929-5535-4439-858b-d219b98c0429.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3efd8645-c239-407a-9eab-2e6e9ee4c797.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9449ced8-70a8-4470-9560-cf104aea04d7.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0812cd33-93e5-46aa-85ed-ce8e4862b59f.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.01701765-2795-4259-8973-f0e7c027b504.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_90dc9b69-ac48-4c2e-bf58-ee1bb3bddf0d
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: d6cf18cd-7e66-4784-a3c3-1e9cc0a9b5c7
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:56:33.1034262+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2D08
+Fehlerhafte Anwendungsstartzeit: 0x1DCD655FC4EFD29
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: d6cf18cd-7e66-4784-a3c3-1e9cc0a9b5c7
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:55:30.6397464+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.588bafd4-b7cd-4c14-8868-5ce4545b85af.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.bacec17c-035e-4878-a6c7-6dca48ead366.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b04b78f6-747e-49c1-a42c-78997c577545.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e8eada5a-ad07-4799-95d8-ae8ab226a723.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.ef3a6db8-14d9-4953-bf86-6bf77055ba8f.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_0a525e8e-fbbe-4fd2-af57-af9ac2a5d698
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: dd860bd5-d067-4170-b168-4ccae6bef49b
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:55:24.8873336+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x2F4C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD655D5B2D316
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: dd860bd5-d067-4170-b168-4ccae6bef49b
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:51:04.2614992+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.99d3b8ae-0a08-44a6-b892-5f33caa6d9ec.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.32108c05-74f2-42fb-a5cc-a8faaf2378d0.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9d21624b-cb4f-4508-8161-7756581c645f.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a9b07e4e-eee0-4506-ad23-c520dac7e7c4.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.203d4438-e758-46d7-8a67-d1294b17c264.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.caaf5482-3163-4f23-81aa-939c54bcc4e4.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.221134f9-7e8b-4840-8168-c7a58b796a35.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_5f860b4b-9528-4ed9-90d7-82448b223bd3
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 222be5f5-d00a-4e29-ac19-f3fea80761e1
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:50:58.0483092+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x4794
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6553A42D860
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 222be5f5-d00a-4e29-ac19-f3fea80761e1
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:48:43.3787253+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.783fb7b2-a9d2-4a39-b6c0-ab9df638a363.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7fd4fcbd-ea4b-4fb8-be7b-5a336de27c21.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.456b510d-6bef-4ed4-8590-2a97b60b6681.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c5678666-353c-49b7-be8e-62c3a2fd502e.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.7965e8fc-3f2d-40bf-9a24-fc17314adc5b.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9db0503b-1b80-4413-b148-c7ac9c621489.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.09538d55-5267-44e4-93ae-139dc970437a.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_86ef355a-ee34-4054-9206-396736d399f9
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 1ce5fadf-ac85-48b9-b68e-24efab69940d
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:48:37.5718597+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0xDA8
+Fehlerhafte Anwendungsstartzeit: 0x1DCD654E603A62C
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 1ce5fadf-ac85-48b9-b68e-24efab69940d
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:45:53.3270328+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b5efa448-5c28-4f2f-898d-460c47886d34.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.28f72629-8f12-420d-bbdc-541a02ac0bdd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fbfb7826-5c02-4aa2-af5e-c759ab338433.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.8145e60c-c7cc-4d22-9ea0-93cce06009ec.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.4ae5c596-ba75-4c1b-98f1-25f0b070eefb.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_ab077096-dbf9-4c3e-bd0a-884585a093f9
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: a8fc8633-f318-4f2c-82c5-9c6e99c6a9c6
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:45:47.0003398+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x6B0C
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6547E647D60
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: a8fc8633-f318-4f2c-82c5-9c6e99c6a9c6
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:43:20.8540676+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f83f65aa-8f4a-42aa-931e-93d99c75a949.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e72f9cd6-9278-4280-a105-279c1197390f.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.452e5091-f52c-413e-ae4c-04d17ccfed17.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.dc228410-25eb-40fc-9904-fa97f1031e52.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.fe90bd82-f172-401f-8d0c-5469e19a5c91.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_aa43cf83-43ef-4406-b959-c78dec406ba1
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: 432cce7b-26b8-45a0-a110-cc4e24a6bc67
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:43:15.9472067+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x5788
+Fehlerhafte Anwendungsstartzeit: 0x1DCD65425B048A2
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: 432cce7b-26b8-45a0-a110-cc4e24a6bc67
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---
+[2026-04-27T16:39:08.3698017+02:00] Id=1001 Provider=Windows Error Reporting
+Fehlerbucket 1498388123360700123, Typ 4
+Ereignisname: APPCRASH
+Antwort: Nicht verfügbar
+CAB-Datei-ID: 0
+
+Problemsignatur:
+P1: BendChecker.App.exe
+P2: 1.0.0.0
+P3: 69bc0000
+P4: StackHash_78d3
+P5: 10.0.26100.8246
+P6: f7576e9e
+P7: c0000374
+P8: PCH_99_FROM_ntdll+0x0000000000162654
+P9: 
+P10: 
+
+Angefügte Dateien:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.18834c23-9cd7-48d4-8d9f-7c319ec8c940.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.a1fa9fe9-e103-41ed-9f4a-e8cc4f389de8.tmp.WERInternalMetadata.xml
+WPR_initiated_DiagTrackMiniLogger_OneTrace_User_Logger_20260421_1_EC_0_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5e37d383-506a-4dfd-8488-e894003f61d6.tmp.etl
+WPR_initiated_DiagTrackMiniLogger_WPR System Collector_inject.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.c242c2b9-ea64-4bb0-9c44-fe89db4fdaae.tmp.etl
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.90a938cf-92e5-4f83-a984-4967e356126b.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.9048101e-c62d-441a-b194-dfa94a3fdc6d.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2e59777f-f936-45ac-bd95-4970a20c483e.tmp.xml
+
+Diese Dateien befinden sich möglicherweise hier:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_BendChecker.App._cc55160868e1bbe1a1d4cd916cb4824a6cc8dec_184faaf8_76e548b1-6f9d-4975-809a-cc7cb7c3beec
+
+Analysesymbol: 
+Es wird erneut nach einer Lösung gesucht: 0
+Berichts-ID: a26a62a6-c441-4455-a03b-2106bf26961a
+Berichtstatus: 268435456
+Bucket mit Hash: 4dbbecc602a06e5df4cb580f349426db
+CAB-Datei-Guid: 0
+---
+[2026-04-27T16:39:02.6219119+02:00] Id=1000 Provider=Application Error
+Fehlerhafter Anwendungsname: BendChecker.App.exe, Version: 1.0.0.0, Zeitstempel: 0x69bc0000
+Fehlerhafter Modulname: ntdll.dll, Version: 10.0.26100.8246, Zeitstempel: 0xf7576e9e
+Ausnahmecode: 0xc0000374
+Fehleroffset: 0x0000000000117555
+Fehlerhafte Prozess-ID: 0x1064
+Fehlerhafte Anwendungsstartzeit: 0x1DCD6538295534D
+Fehlerhafter Anwendungspfad: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
+Fehlerhafter Modulpfad: C:\WINDOWS\SYSTEM32\ntdll.dll
+Berichts-ID: a26a62a6-c441-4455-a03b-2106bf26961a
+Vollständiger Name des fehlerhaften Pakets: 
+Fehlerhafte paketbezogene Anwendungs-ID: 
+---

@@ -1,0 +1,4 @@
+﻿Timestamp: 2026-04-28T19:07:34.4950898+02:00
+Info: diagnostics.txt was not found in output or temp.
+OutputExpected: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\diagnostics.txt
+TempExpected: C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\BendChecker_diagnostics.txt
