@@ -1,14 +1,14 @@
 ﻿
 Die Starteinstellungen von src\BendChecker.App\Properties\launchSettings.json werden verwendetÔÇª
 
-[2026-04-28T19:39:28.3446030+02:00] Appending temp diagnostics from C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\BendChecker_diagnostics.txt
-Timestamp: 2026-04-28T19:38:46.4952675+02:00
+[2026-04-28T19:48:14.3405679+02:00] Appending temp diagnostics from C:\Users\hoelz.WIN-G2OC48399EJ\AppData\Local\Temp\BendChecker_diagnostics.txt
+Timestamp: 2026-04-28T19:47:29.6928236+02:00
 ProcessPath: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.exe
 BaseDirectory: C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\
 Environment.Version: 8.0.26
 OSVersion: Microsoft Windows NT 10.0.26100.0
 Is64BitProcess: True
-PATH contains runtimes\win-x64\native: False
+PATH contains runtimes\win-x64\native: True
 Exists runtimes\win-x64\native: True
 Exists occt\x64: True
 Native dir file list:
@@ -114,10 +114,3 @@ Native dir file list:
 - vcruntime140_1.dll (49488 bytes)
 - zlib.dll (83456 bytes)
 - zlib1.dll (134656 bytes)
-
-=== NativeLibrary Probe ===
-LOAD OK: avcodec-58.dll
-LOAD OK: avdevice-58.dll
-LOAD OK: avfilter-7.dll
-LOAD OK: avformat-58.dll
-LOAD OK: avutil-56.dll

@@ -1,8 +1,8 @@
 ﻿
-[2026-04-28T19:38:30.6597086+02:00] Auto diagnostics run started.
-[2026-04-28T19:38:30.6677561+02:00] RepoRoot=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker
-[2026-04-28T19:38:30.6821495+02:00] Configuration=Debug
-[2026-04-28T19:38:30.7011268+02:00] Collecting dotnet --info
+[2026-04-28T19:46:40.6730262+02:00] Auto diagnostics run started.
+[2026-04-28T19:46:40.6817054+02:00] RepoRoot=C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker
+[2026-04-28T19:46:40.7050355+02:00] Configuration=Debug
+[2026-04-28T19:46:40.7290672+02:00] Collecting dotnet --info
 .NET SDK:
  Version:           10.0.202
  Commit:            1e7d5a8ae3
@@ -66,9 +66,9 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-[2026-04-28T19:38:31.4918303+02:00] Running build
-[2026-04-28T19:38:38.5157306+02:00] Build completed. Success=True
-[2026-04-28T19:38:38.5201798+02:00] Collecting native files from C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\runtimes\win-x64\native
-[2026-04-28T19:38:38.5983837+02:00] Starting app run probe (3-5 sec)
-[2026-04-28T19:39:28.3922271+02:00] Collecting EventViewer entries
-[2026-04-28T19:39:29.0886045+02:00] Preparing git commit/push
+[2026-04-28T19:46:41.4630657+02:00] Running build
+[2026-04-28T19:46:48.3901465+02:00] Build completed. Success=True
+[2026-04-28T19:46:48.3952476+02:00] Collecting native files from C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\runtimes\win-x64\native
+[2026-04-28T19:46:48.4691571+02:00] Starting app run probe (3-5 sec)
+[2026-04-28T19:48:14.3898760+02:00] Collecting EventViewer entries
+[2026-04-28T19:48:15.1374571+02:00] Preparing git commit/push
