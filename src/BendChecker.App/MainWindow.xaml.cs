@@ -298,12 +298,17 @@ public partial class MainWindow : Window
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
+            psi.Environment["BENDCHECKER_DISABLE_NATIVE_PROBE"] = "1";
 
             using var process = Process.Start(psi) ?? throw new InvalidOperationException("STEP-Prozess konnte nicht gestartet werden.");
             await process.WaitForExitAsync(ct);
 
             if (!File.Exists(outputPath))
-                throw new InvalidOperationException("STEP-Probe lieferte keine Ergebnisdatei.");
+            {
+                var diagPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
+                var details = File.Exists(diagPath) ? $" Diagnostics: {diagPath}" : string.Empty;
+                throw new InvalidOperationException($"STEP-Probe lieferte keine Ergebnisdatei. ExitCode={process.ExitCode}.{details}");
+            }
 
             return ParseProbeResult(File.ReadAllLines(outputPath));
         }
