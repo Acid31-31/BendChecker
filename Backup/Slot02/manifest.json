@@ -1,0 +1,15 @@
+﻿{
+    "TimestampUtc":  "2026-04-28T16:21:46.4908566Z",
+    "Slot":  "Slot02",
+    "MaxBackups":  6,
+    "FileCount":  7,
+    "Files":  [
+                  "src\\BendChecker.App\\App.xaml.cs",
+                  "src\\BendChecker.App\\GeoPreviewWindow.xaml",
+                  "src\\BendChecker.App\\GeoPreviewWindow.xaml.cs",
+                  "src\\BendChecker.App\\MainWindow.xaml",
+                  "src\\BendChecker.App\\MainWindow.xaml.cs",
+                  "src\\BendChecker.Core\\Services\\BendCheckService.cs",
+                  "src\\BendChecker.Core\\Services\\RuleService.cs"
+              ]
+}

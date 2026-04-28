@@ -1,0 +1,13 @@
+﻿{
+    "TimestampUtc":  "2026-04-27T17:42:39.8585554Z",
+    "Slot":  "Slot01",
+    "MaxBackups":  6,
+    "FileCount":  5,
+    "Files":  [
+                  "src\\BendChecker.App\\App.xaml.cs",
+                  "src\\BendChecker.App\\MainWindow.xaml",
+                  "src\\BendChecker.App\\MainWindow.xaml.cs",
+                  "src\\BendChecker.Core\\Services\\BendCheckService.cs",
+                  "src\\BendChecker.Core\\Services\\RuleService.cs"
+              ]
+}

@@ -12,66 +12,63 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
     private const byte DefaultBlue = 205;
     private const byte DefaultAlpha = 255;
 
+    private StepDocumentContext? _retainedContext;
+
     public Task<bool> CanOpenAsync(string stepPath, CancellationToken ct)
     {
-        return Task.Run(() =>
+        ct.ThrowIfCancellationRequested();
+
+        if (!IsSupportedStepFile(stepPath))
+            return Task.FromResult(false);
+
+        try
         {
-            ct.ThrowIfCancellationRequested();
-
-            if (!IsSupportedStepFile(stepPath))
-                return false;
-
-            try
-            {
-                _ = ReadDocumentContext(stepPath, ct);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }, ct);
+            _ = ReadDocumentContext(stepPath, ct);
+            return Task.FromResult(true);
+        }
+        catch
+        {
+            return Task.FromResult(false);
+        }
     }
 
     public Task<decimal?> TryGetThicknessMmAsync(string stepPath, CancellationToken ct)
     {
-        return Task.Run<decimal?>(() =>
-        {
-            ct.ThrowIfCancellationRequested();
+        ct.ThrowIfCancellationRequested();
 
-            if (!File.Exists(stepPath))
-                return null;
+        if (!File.Exists(stepPath))
+            return Task.FromResult<decimal?>(null);
 
-            var thicknessFromName = StepAnalyzerStub.TryParseThicknessFromName(stepPath);
-            if (thicknessFromName is not null)
-                return thicknessFromName;
+        var thicknessFromName = StepAnalyzerStub.TryParseThicknessFromName(stepPath);
+        if (thicknessFromName is not null)
+            return Task.FromResult<decimal?>(thicknessFromName);
 
-            var context = ReadDocumentContext(stepPath, ct);
-            var thickness = TryEstimateThicknessMm(context.RootShape, ct);
-            return thickness is null ? null : Math.Round(thickness.Value, 2, MidpointRounding.AwayFromZero);
-        }, ct);
+        var context = ReadDocumentContext(stepPath, ct);
+        _retainedContext = context;
+
+        var thickness = TryEstimateThicknessMm(context.RootShape, ct);
+        return Task.FromResult<decimal?>(thickness is null ? null : Math.Round(thickness.Value, 2, MidpointRounding.AwayFromZero));
     }
 
     public Task<StepScene?> TryLoadSceneAsync(string stepPath, CancellationToken ct)
     {
-        return Task.Run<StepScene?>(() =>
+        try
         {
-            try
-            {
-                ct.ThrowIfCancellationRequested();
+            ct.ThrowIfCancellationRequested();
 
-                var context = ReadDocumentContext(stepPath, ct);
-                var parts = Triangulate(context.RootShape, context.ColorTool, ct);
-                if (parts.Count == 0)
-                    return null;
+            var context = ReadDocumentContext(stepPath, ct);
+            _retainedContext = context;
 
-                return new StepScene(parts);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("STEP Preview failed: " + ex.Message, ex);
-            }
-        }, ct);
+            var parts = Triangulate(context.RootShape, context.ColorTool, ct);
+            if (parts.Count == 0)
+                return Task.FromResult<StepScene?>(null);
+
+            return Task.FromResult<StepScene?>(new StepScene(parts));
+        }
+        catch (Exception ex)
+        {
+            throw new InvalidOperationException("STEP Preview failed: " + ex.Message, ex);
+        }
     }
 
     private static bool IsSupportedStepFile(string stepPath)
@@ -114,7 +111,7 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
             throw new InvalidOperationException("Die STEP-Datei enthaelt keine darstellbare Geometrie.");
 
         var colorTool = XCAFDoc_DocumentTool.ColorTool(document.Main);
-        return new StepDocumentContext(shape, colorTool);
+        return new StepDocumentContext(shape, colorTool, document, reader);
     }
 
     private static List<StepMeshPart> Triangulate(TopoDS_Shape shape, XCAFDoc_ColorTool? colorTool, CancellationToken ct)
@@ -327,5 +324,9 @@ public sealed class OcctStepAnalyzer : IStepAnalyzer
         return (byte)scaled;
     }
 
-    private sealed record StepDocumentContext(TopoDS_Shape RootShape, XCAFDoc_ColorTool? ColorTool);
+    private sealed record StepDocumentContext(
+        TopoDS_Shape RootShape,
+        XCAFDoc_ColorTool? ColorTool,
+        TDocStd_Document Document,
+        STEPCAFControl_Reader Reader);
 }

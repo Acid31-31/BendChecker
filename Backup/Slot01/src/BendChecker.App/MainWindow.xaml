@@ -46,10 +46,6 @@
 
     <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,0,0,8">
       <Button Content="Analysieren" Width="140" Click="Analyze_Click"/>
-      <Button Content="Zoom +" Width="80" Margin="12,0,0,0" Click="ZoomIn_Click"/>
-      <Button Content="Zoom -" Width="80" Margin="6,0,0,0" Click="ZoomOut_Click"/>
-      <Button Content="Ansicht Reset" Width="110" Margin="6,0,0,0" Click="ResetView_Click"/>
-      <TextBlock Margin="12,0,0,0" VerticalAlignment="Center" Text="Maus: Links=drehen, Rad=zoomen"/>
       <TextBlock x:Name="StatusText" Margin="12,0,0,0" VerticalAlignment="Center" d:Text="Designer-Vorschau aktiv"/>
     </StackPanel>
 
@@ -132,55 +128,13 @@
         </Grid>
       </Border>
 
-      <Grid Grid.Column="2">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="*"/>
-          <RowDefinition Height="8"/>
-          <RowDefinition Height="220"/>
-        </Grid.RowDefinitions>
-
-        <DataGrid Grid.Row="0" x:Name="FindingsGrid" AutoGenerateColumns="False" IsReadOnly="True">
-          <DataGrid.Columns>
-            <DataGridTextColumn Header="Severity" Binding="{Binding Severity}" Width="100"/>
-            <DataGridTextColumn Header="Code" Binding="{Binding Code}" Width="160"/>
-            <DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="*"/>
-          </DataGrid.Columns>
-        </DataGrid>
-
-        <Border Grid.Row="2" BorderBrush="#33000000" BorderThickness="1" CornerRadius="4" Background="#FFF8F9FB" Padding="8">
-          <Grid>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto"/>
-              <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="8"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="8"/>
-                <ColumnDefinition Width="Auto"/>
-              </Grid.ColumnDefinitions>
-              <TextBlock Text="Abwicklungsvorschau" FontWeight="SemiBold" VerticalAlignment="Center"/>
-              <Button Grid.Column="1" Content="Geo laden..." Padding="10,2" Click="LoadGeoPreview_Click"/>
-              <Button Grid.Column="3" Content="Als .geo speichern" Padding="10,2" Click="ExportFlatPatternGeo_Click"/>
-              <Button Grid.Column="5" Content=".geo Vorschau" Padding="10,2" Click="OpenGeoPreview_Click"/>
-            </Grid>
-            <Grid Grid.Row="1" Margin="0,6,0,0">
-              <Image x:Name="FlatPatternImage" Stretch="Uniform"/>
-              <TextBlock x:Name="FlatPatternInfoText"
-                         HorizontalAlignment="Left"
-                         VerticalAlignment="Top"
-                         Margin="8"
-                         Background="#CCFFFFFF"
-                         Padding="6,4"
-                         Foreground="#66000000"
-                         Text="Noch keine Abwicklung berechnet."/>
-            </Grid>
-          </Grid>
-        </Border>
-      </Grid>
+      <DataGrid Grid.Column="2" x:Name="FindingsGrid" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid.Columns>
+          <DataGridTextColumn Header="Severity" Binding="{Binding Severity}" Width="100"/>
+          <DataGridTextColumn Header="Code" Binding="{Binding Code}" Width="160"/>
+          <DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="*"/>
+        </DataGrid.Columns>
+      </DataGrid>
     </Grid>
   </Grid>
 </Window>
