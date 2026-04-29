@@ -12,6 +12,32 @@ namespace BendChecker.Core.Services;
 /// </summary>
 public sealed class StepToGeoExporter
 {
+    // ── geometry / algorithm constants ───────────────────────────────────────
+
+    /// <summary>Minimum dot-product (|cos θ|) for two normals to be considered parallel.</summary>
+    private const double ParallelNormalThreshold = 0.999;
+
+    /// <summary>Minimum dot-product for a face normal to be considered aligned with the dominant base normal.</summary>
+    private const double DominantNormalAlignmentThreshold = 0.85;
+
+    /// <summary>Maximum dot-product for two normals to be clustered into the same direction group.</summary>
+    private const double NormalClusteringThreshold = 0.98;
+
+    /// <summary>Maximum dot-product for two normals to be considered sufficiently different (for bend adjacent-plane selection).</summary>
+    private const double DifferentNormalThreshold = 0.98;
+
+    /// <summary>Maximum |cos θ| for a planar face normal to be considered perpendicular to a cylinder axis.</summary>
+    private const double AxisPerpendicularityThreshold = 0.5;
+
+    /// <summary>Spatial tolerance used when deduplicating projected 2-D points (mm).</summary>
+    private const double PointDeduplicationTolerance = 0.1;
+
+    /// <summary>Spatial tolerance used when registering bend-line endpoints as 2-D points (mm).</summary>
+    private const double BendLinePointTolerance = 0.5;
+
+    /// <summary>Minimum length for a cross-product vector to be considered non-degenerate.</summary>
+    private const double CrossProductTolerance = 1e-12;
+
     // ── internal geometry records ────────────────────────────────────────────
 
     private sealed record PlaneData(gp_Dir Normal, gp_Pnt Origin, List<gp_Pnt> Vertices);
@@ -101,7 +127,7 @@ public sealed class StepToGeoExporter
             // Only project faces whose normal is roughly aligned with the base normal
             // (top/bottom faces of the sheet).
             var dot = Math.Abs(pf.Normal.Dot(baseNormal));
-            if (dot < 0.85)
+            if (dot < DominantNormalAlignmentThreshold)
                 continue;
 
             foreach (var v in pf.Vertices)
@@ -122,7 +148,7 @@ public sealed class StepToGeoExporter
         }
 
         // ── 7. Deduplicate and build 2-D point list ──────────────────────────
-        var uniquePts = BuildUniquePoints(raw2d, tolerance: 0.1);
+        var uniquePts = BuildUniquePoints(raw2d, tolerance: PointDeduplicationTolerance);
         if (uniquePts.Count < 2)
             throw new InvalidOperationException("Zu wenige Punkte für die GEO-Ausgabe.");
 
@@ -170,11 +196,7 @@ public sealed class StepToGeoExporter
                     if (adaptor.Type == GeomAbs_SurfaceType.GeomAbs_Plane)
                     {
                         var pln = adaptor.Plane;
-                        var normal = pln.Axis.Direction;
-                        // Make normal consistently point in the same hemisphere
-                        if (normal.Z < 0 || (Math.Abs(normal.Z) < 1e-6 && normal.Y < 0))
-                            normal = normal.Reversed;
-
+                        var normal = NormalizeToUpperHemisphere(pln.Axis.Direction);
                         var vertices = CollectFaceVertices(face);
                         if (vertices.Count > 0)
                             planarFaces.Add(new PlaneData(normal, pln.Location, vertices));
@@ -212,13 +234,16 @@ public sealed class StepToGeoExporter
         }
         catch
         {
-            // Cylinder() might not be supported – try estimating from bounding box
+            // Cylinder property not accessible – estimate from triangulated vertices.
+            // NOTE: The radius is estimated as the average XY-plane distance from the centroid.
+            // This assumes the cylinder axis is approximately aligned with the world Z-axis;
+            // for differently oriented cylinders the estimate may be inaccurate.
+            // The axis direction is hard-coded to (0,0,1) as a safe fallback.
             try
             {
                 var vertices = CollectFaceVertices(face);
                 if (vertices.Count >= 3)
                 {
-                    // Rough cylinder info: use centroid + average radius from points
                     var cx = vertices.Average(v => v.X);
                     var cy = vertices.Average(v => v.Y);
                     var cz = vertices.Average(v => v.Z);
@@ -227,7 +252,7 @@ public sealed class StepToGeoExporter
                     if (radiusEst > 0.01)
                     {
                         cylindricalFaces.Add(new CylData(
-                            new gp_Dir(0, 0, 1),
+                            new gp_Dir(0, 0, 1), // fallback axis: world Z
                             centroid,
                             radiusEst,
                             vertices));
@@ -277,7 +302,7 @@ public sealed class StepToGeoExporter
             {
                 var nA = planarFaces[i].Normal;
                 var nB = planarFaces[j].Normal;
-                if (Math.Abs(nA.Dot(nB)) < 0.999)
+                if (Math.Abs(nA.Dot(nB)) < ParallelNormalThreshold)
                     continue;
 
                 var dist = planarFaces[i].Origin.Distance(planarFaces[j].Origin);
@@ -309,7 +334,7 @@ public sealed class StepToGeoExporter
             var found = false;
             for (var i = 0; i < clusters.Count; i++)
             {
-                if (Math.Abs(clusters[i].Dir.Dot(n)) > 0.98)
+                if (Math.Abs(clusters[i].Dir.Dot(n)) > NormalClusteringThreshold)
                 {
                     clusters[i] = (clusters[i].Dir, clusters[i].Count + 1);
                     found = true;
@@ -338,6 +363,18 @@ public sealed class StepToGeoExporter
         return (xAxis, yAxis);
     }
 
+    /// <summary>
+    /// Flips a face normal so that it points into the upper hemisphere (Z > 0, or if Z≈0
+    /// then Y > 0). This ensures normals of opposite faces of the same sheet metal part get
+    /// grouped together during clustering, avoiding double-counting the same plane direction.
+    /// </summary>
+    private static gp_Dir NormalizeToUpperHemisphere(gp_Dir d)
+    {
+        if (d.Z < 0 || (Math.Abs(d.Z) < 1e-6 && d.Y < 0))
+            return d.Reversed;
+        return d;
+    }
+
     /// <summary>Computes a × b and returns the normalized result as a gp_Dir.</summary>
     private static gp_Dir CrossDir(gp_Dir a, gp_Dir b)
     {
@@ -345,7 +382,7 @@ public sealed class StepToGeoExporter
         var y = a.Z * b.X - a.X * b.Z;
         var z = a.X * b.Y - a.Y * b.X;
         var len = Math.Sqrt(x * x + y * y + z * z);
-        if (len < 1e-12)
+        if (len < CrossProductTolerance)
             return new gp_Dir(0, 0, 1);
         return new gp_Dir(x / len, y / len, z / len);
     }
@@ -474,7 +511,7 @@ public sealed class StepToGeoExporter
                 // The bend angle (as measured in sheet metal) is 180° – angleBetweenNormals when normals point outward
                 var bendAngleDeg = Math.Round(180.0 - angleBetweenNormals, 3);
                 if (bendAngleDeg <= 0 || bendAngleDeg >= 180)
-                    bendAngleDeg = 90.0; // fallback
+                    bendAngleDeg = 90.0; // Geometry could not determine a valid angle; defaulting to 90° (TODO: log a warning)
 
                 // Project the cylinder axis endpoints to 2D as the bend line
                 var (axPt1, axPt2) = GetCylinderAxisEndpoints(cyl);
@@ -482,8 +519,8 @@ public sealed class StepToGeoExporter
                 var (ax2x, ax2y) = ProjectPoint(axPt2, xAxis, yAxis);
 
                 // Register the two axis endpoints as unique 2D points
-                var id1 = RegisterPoint(uniquePts, ax1x, ax1y, 0.5);
-                var id2 = RegisterPoint(uniquePts, ax2x, ax2y, 0.5);
+                var id1 = RegisterPoint(uniquePts, ax1x, ax1y, BendLinePointTolerance);
+                var id2 = RegisterPoint(uniquePts, ax2x, ax2y, BendLinePointTolerance);
 
                 if (id1 == id2)
                     continue;
@@ -509,7 +546,7 @@ public sealed class StepToGeoExporter
         {
             // Normal should be perpendicular to cylinder axis (dot near 0)
             var dotWithAxis = Math.Abs(pf.Normal.Dot(cyl.AxisDir));
-            if (dotWithAxis > 0.5)
+            if (dotWithAxis > AxisPerpendicularityThreshold)
                 continue; // this face normal is too aligned with the axis
 
             // Centroid of the planar face
@@ -548,7 +585,7 @@ public sealed class StepToGeoExporter
             else if (selected.Count == 1)
             {
                 // Check that the normal is different enough
-                if (Math.Abs(selected[0].Normal.Dot(pf.Normal)) < 0.98)
+                if (Math.Abs(selected[0].Normal.Dot(pf.Normal)) < DifferentNormalThreshold)
                     selected.Add(pf);
             }
             else
