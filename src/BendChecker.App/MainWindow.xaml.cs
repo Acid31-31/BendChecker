@@ -192,6 +192,46 @@ public partial class MainWindow : Window
         }
     }
 
+    private async void ExportGeoFromStep_Click(object sender, RoutedEventArgs e)
+    {
+        var step = StepPathText.Text.Trim();
+        if (string.IsNullOrWhiteSpace(step) || !File.Exists(step))
+        {
+            MessageBox.Show("Bitte zuerst eine STEP-Datei wählen.", "Export GEO", MessageBoxButton.OK, MessageBoxImage.Information);
+            return;
+        }
+
+        StatusText.Text = "Exportiere GEO...";
+        AppendVisualReport($"Export GEO Start: {Path.GetFileName(step)}");
+        App.MarkOperation("ExportGEO");
+
+        try
+        {
+            var geoPath = await Task.Run(() =>
+            {
+                var exporter = new StepToGeoExporter();
+                return exporter.Export(step, CancellationToken.None);
+            });
+
+            StatusText.Text = $"GEO exportiert: {Path.GetFileName(geoPath)}";
+            AppendVisualReport($"GEO gespeichert: {geoPath}");
+            App.MarkIdle();
+
+            MessageBox.Show(
+                $"GEO erfolgreich erstellt:{Environment.NewLine}{geoPath}",
+                "Export GEO",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
+        }
+        catch (Exception ex)
+        {
+            StatusText.Text = "GEO-Export fehlgeschlagen.";
+            AppendVisualReport($"GEO-Exportfehler: {ex}");
+            App.MarkOperation("Fault: ExportGEO");
+            MessageBox.Show(ex.ToString(), "GEO-Export Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+    }
+
     private void ResetViewport()
     {
         var stepViewport = EnsureViewport();

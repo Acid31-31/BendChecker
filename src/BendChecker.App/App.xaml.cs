@@ -35,6 +35,12 @@ public partial class App : Application
             return;
         }
 
+        if (TryRunExportGeoMode(e.Args))
+        {
+            Shutdown();
+            return;
+        }
+
         var previous = ReadSessionState();
         if (previous is null)
         {
@@ -254,6 +260,41 @@ public partial class App : Application
                 // ignore file write failures in probe mode
             }
 
+            Environment.ExitCode = 2;
+        }
+
+        return true;
+    }
+
+    private static bool TryRunExportGeoMode(string[] args)
+    {
+        if (args.Length < 2 || !string.Equals(args[0], "--export-geo", StringComparison.OrdinalIgnoreCase))
+            return false;
+
+        var stepPath = args[1];
+        var diagPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
+
+        try
+        {
+            AppendActivityLog($"ExportGEO: start for {stepPath}");
+
+            var exporter = new BendChecker.Core.Services.StepToGeoExporter();
+            var geoPath = exporter.Export(stepPath, CancellationToken.None);
+
+            var msg = $"ExportGEO: OK -> {geoPath}";
+            AppendActivityLog(msg);
+            try { File.AppendAllText(diagPath, msg + Environment.NewLine); } catch { }
+
+            Console.WriteLine(msg);
+            Environment.ExitCode = 0;
+        }
+        catch (Exception ex)
+        {
+            var msg = $"ExportGEO: FAILED - {ex.GetType().Name}: {ex.Message}";
+            AppendActivityLog(msg);
+            try { File.AppendAllText(diagPath, msg + Environment.NewLine + ex + Environment.NewLine); } catch { }
+
+            Console.Error.WriteLine(msg);
             Environment.ExitCode = 2;
         }
 
