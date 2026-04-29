@@ -46,6 +46,7 @@
 
     <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,0,0,8">
       <Button Content="Analysieren" Width="140" Click="Analyze_Click"/>
+      <Button Content="Export GEO" Width="110" Margin="12,0,0,0" Click="ExportGeoFromStep_Click"/>
       <Button Content="Zoom +" Width="80" Margin="12,0,0,0" Click="ZoomIn_Click"/>
       <Button Content="Zoom -" Width="80" Margin="6,0,0,0" Click="ZoomOut_Click"/>
       <Button Content="Ansicht Reset" Width="110" Margin="6,0,0,0" Click="ResetView_Click"/>
