@@ -298,12 +298,17 @@ public partial class MainWindow : Window
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
+            psi.Environment["BENDCHECKER_DISABLE_NATIVE_PROBE"] = "1";
 
             using var process = Process.Start(psi) ?? throw new InvalidOperationException("STEP-Prozess konnte nicht gestartet werden.");
             await process.WaitForExitAsync(ct);
 
             if (!File.Exists(outputPath))
-                throw new InvalidOperationException("STEP-Probe lieferte keine Ergebnisdatei.");
+            {
+                var diagPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
+                var details = File.Exists(diagPath) ? $" Diagnostics: {diagPath}" : string.Empty;
+                throw new InvalidOperationException($"STEP-Probe lieferte keine Ergebnisdatei. ExitCode={process.ExitCode}.{details}");
+            }
 
             return ParseProbeResult(File.ReadAllLines(outputPath));
         }
@@ -572,6 +577,7 @@ public partial class MainWindow : Window
         {
             ShowStartupPreview();
             AppendVisualReport($"Render-Fehler: {ex}");
+            MessageBox.Show(ex.ToString(), "Render-Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             return false;
         }
     }
@@ -752,6 +758,7 @@ public partial class MainWindow : Window
         {
             AppendVisualReport($"Kopierfehler: {ex.Message}");
             StatusText.Text = "Kopieren fehlgeschlagen. Bitte 'Report speichern' nutzen.";
+            MessageBox.Show(ex.ToString(), "Kopierfehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -774,6 +781,7 @@ public partial class MainWindow : Window
         {
             AppendVisualReport($"Speicherfehler: {ex.Message}");
             StatusText.Text = "Report konnte nicht gespeichert werden.";
+            MessageBox.Show(ex.ToString(), "Speicherfehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -793,6 +801,7 @@ public partial class MainWindow : Window
         {
             AppendVisualReport($"Ordner öffnen fehlgeschlagen: {ex.Message}");
             StatusText.Text = "Report-Ordner konnte nicht geöffnet werden.";
+            MessageBox.Show(ex.ToString(), "Ordner öffnen fehlgeschlagen", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -822,6 +831,7 @@ public partial class MainWindow : Window
         catch (Exception ex)
         {
             AppendVisualReport($"Regelpfad konnte nicht wiederhergestellt werden: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "Regelpfad-Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -834,6 +844,7 @@ public partial class MainWindow : Window
         catch (Exception ex)
         {
             AppendVisualReport($"Regelpfad konnte nicht gespeichert werden: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "Regelpfad-Speicherfehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -858,6 +869,7 @@ public partial class MainWindow : Window
             _importedRules = [];
             RulesInfoText.Text = "Regel-DB fehlerhaft.";
             AppendVisualReport($"Regel-DB konnte nicht geladen werden: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "Regel-DB Ladefehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -871,6 +883,7 @@ public partial class MainWindow : Window
         catch (Exception ex)
         {
             AppendVisualReport($"Regel-DB konnte nicht gespeichert werden: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "Regel-DB Speicherfehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -1117,6 +1130,7 @@ public partial class MainWindow : Window
         {
             StatusText.Text = "Geo-Export fehlgeschlagen.";
             AppendVisualReport($"Geo-Exportfehler: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "Geo-Exportfehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
@@ -1153,6 +1167,7 @@ public partial class MainWindow : Window
         {
             StatusText.Text = "GEO laden fehlgeschlagen.";
             AppendVisualReport($"GEO-Ladefehler: {ex.Message}");
+            MessageBox.Show(ex.ToString(), "GEO-Ladefehler", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 

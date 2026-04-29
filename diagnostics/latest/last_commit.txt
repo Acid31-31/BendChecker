@@ -1,0 +1,4 @@
+﻿timestamp=2026-04-28T19:59:04.2803437+02:00
+branch=diagnostics/startup-crash
+sha=128e10a47d9cca3e01c2bf08d4f99e66f5ab37ca
+commit=https://github.com/Acid31-31/BendChecker/commit/128e10a47d9cca3e01c2bf08d4f99e66f5ab37ca

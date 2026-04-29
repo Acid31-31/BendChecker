@@ -1,0 +1,10 @@
+﻿  Wiederherzustellende Projekte werden ermittelt...
+  Alle Projekte sind für die Wiederherstellung auf dem neuesten Stand.
+  BendChecker.Core -> C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.Core\bin\Debug\net8.0-windows\BendChecker.Core.dll
+  BendChecker.App -> C:\Users\hoelz.WIN-G2OC48399EJ\source\repos\Acid31-31\BendChecker\src\BendChecker.App\bin\Debug\net8.0-windows\BendChecker.App.dll
+
+Der Buildvorgang wurde erfolgreich ausgeführt.
+    0 Warnung(en)
+    0 Fehler
+
+Verstrichene Zeit 00:00:06.13

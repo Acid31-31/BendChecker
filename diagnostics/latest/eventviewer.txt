@@ -1,0 +1,1 @@
+﻿No matching Application Error/WER events found.

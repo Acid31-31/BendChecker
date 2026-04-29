@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Media;
@@ -21,6 +23,10 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         EnsureReportFolder();
+
+        WriteEarlyDiagnostics();
+        PrependNativeRuntimePath();
+        ProbeNativeDllLoad();
 
         ConfigureOcctRuntime();
         if (TryRunStepProbeMode(e.Args))
@@ -53,6 +59,143 @@ public partial class App : Application
 
         RegisterGlobalExceptionHandlers();
         base.OnStartup(e);
+    }
+
+    private static void WriteEarlyDiagnostics()
+    {
+        try
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine($"Timestamp: {DateTime.Now:O}");
+            sb.AppendLine($"ProcessPath: {Environment.ProcessPath}");
+            sb.AppendLine($"BaseDirectory: {AppContext.BaseDirectory}");
+            sb.AppendLine($"Environment.Version: {Environment.Version}");
+            sb.AppendLine($"OSVersion: {Environment.OSVersion}");
+            sb.AppendLine($"Is64BitProcess: {Environment.Is64BitProcess}");
+
+            var nativeDir = Path.Combine(AppContext.BaseDirectory, "runtimes", "win-x64", "native");
+            var legacyNativeDir = Path.Combine(AppContext.BaseDirectory, "occt", "x64");
+            var pathValue = Environment.GetEnvironmentVariable("PATH") ?? string.Empty;
+
+            sb.AppendLine($"PATH contains runtimes\\win-x64\\native: {pathValue.Contains(nativeDir, StringComparison.OrdinalIgnoreCase)}");
+            sb.AppendLine($"Exists runtimes\\win-x64\\native: {Directory.Exists(nativeDir)}");
+            sb.AppendLine($"Exists occt\\x64: {Directory.Exists(legacyNativeDir)}");
+
+            sb.AppendLine("Native dir file list:");
+            if (Directory.Exists(nativeDir))
+            {
+                foreach (var file in Directory.GetFiles(nativeDir))
+                {
+                    var fi = new FileInfo(file);
+                    sb.AppendLine($"- {fi.Name} ({fi.Length} bytes)");
+                }
+            }
+            else
+            {
+                sb.AppendLine("- <missing>");
+            }
+
+            var tempPath = Path.Combine(Path.GetTempPath(), "BendChecker_diagnostics.txt");
+            var outputPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
+            File.WriteAllText(tempPath, sb.ToString());
+            File.WriteAllText(outputPath, sb.ToString());
+        }
+        catch
+        {
+            // do not block startup diagnostics path
+        }
+    }
+
+    private static void PrependNativeRuntimePath()
+    {
+        try
+        {
+            var nativeDir = Path.Combine(AppContext.BaseDirectory, "runtimes", "win-x64", "native");
+            if (!Directory.Exists(nativeDir))
+                return;
+
+            var path = Environment.GetEnvironmentVariable("PATH") ?? string.Empty;
+            if (!path.Contains(nativeDir, StringComparison.OrdinalIgnoreCase))
+                Environment.SetEnvironmentVariable("PATH", $"{nativeDir};{path}", EnvironmentVariableTarget.Process);
+        }
+        catch
+        {
+            // do not block startup
+        }
+    }
+
+    private static void ProbeNativeDllLoad()
+    {
+        try
+        {
+            if (string.Equals(Environment.GetEnvironmentVariable("BENDCHECKER_DISABLE_NATIVE_PROBE"), "1", StringComparison.Ordinal))
+                return;
+
+            var nativeDir = Path.Combine(AppContext.BaseDirectory, "runtimes", "win-x64", "native");
+            var tempPath = Path.Combine(Path.GetTempPath(), "BendChecker_diagnostics.txt");
+            var outputPath = Path.Combine(AppContext.BaseDirectory, "diagnostics.txt");
+
+            var sb = new StringBuilder();
+            sb.AppendLine();
+            sb.AppendLine("=== NativeLibrary Probe ===");
+
+            if (!Directory.Exists(nativeDir))
+            {
+                sb.AppendLine($"Native folder missing: {nativeDir}");
+                AppendDiagnostics(tempPath, outputPath, sb.ToString());
+                return;
+            }
+
+            var probeDlls = new[]
+            {
+                "TKernel.dll",
+                "TKMath.dll",
+                "TKXSBase.dll",
+                "TKDESTEP.dll",
+                "TxOcct.dll"
+            };
+
+            foreach (var dllName in probeDlls)
+            {
+                var fullPath = Path.Combine(nativeDir, dllName);
+                if (!File.Exists(fullPath))
+                {
+                    sb.AppendLine($"MISSING: {dllName}");
+                    continue;
+                }
+
+                try
+                {
+                    var handle = NativeLibrary.Load(fullPath);
+                    sb.AppendLine($"LOAD OK: {dllName}");
+                    NativeLibrary.Free(handle);
+                }
+                catch (Exception ex)
+                {
+                    sb.AppendLine($"LOAD FAIL: {dllName}");
+                    sb.AppendLine(ex.ToString());
+                }
+            }
+
+            AppendDiagnostics(tempPath, outputPath, sb.ToString());
+        }
+        catch
+        {
+            // diagnostics must never block app startup
+        }
+    }
+
+    private static void AppendDiagnostics(string tempPath, string outputPath, string text)
+    {
+        try
+        {
+            File.AppendAllText(tempPath, text);
+            File.AppendAllText(outputPath, text);
+        }
+        catch
+        {
+            // ignore diagnostic write issues
+        }
     }
 
     private static bool TryRunStepProbeMode(string[] args)
