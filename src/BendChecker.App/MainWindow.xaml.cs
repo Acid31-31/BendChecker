@@ -192,6 +192,62 @@ public partial class MainWindow : Window
         }
     }
 
+    private async void ExportGeoFromStep_Click(object sender, RoutedEventArgs e)
+    {
+        var step = StepPathText.Text.Trim();
+        if (string.IsNullOrWhiteSpace(step) || !File.Exists(step))
+        {
+            MessageBox.Show("Bitte zuerst eine STEP-Datei wählen.", "Export GEO", MessageBoxButton.OK, MessageBoxImage.Information);
+            return;
+        }
+
+        StatusText.Text = "Exportiere GEO...";
+        AppendVisualReport($"Export GEO Start: {Path.GetFileName(step)}");
+        App.MarkOperation("ExportGEO");
+
+        string? geoPath = null;
+        Exception? exportError = null;
+
+        await Task.Run(() =>
+        {
+            try
+            {
+                var exporter = new StepToGeoExporter();
+                geoPath = exporter.Export(step, CancellationToken.None);
+            }
+            catch (Exception ex)
+            {
+                exportError = ex;
+            }
+        });
+
+        // All UI updates run here – on the UI thread – because await resumes on the
+        // captured SynchronizationContext (WPF Dispatcher). The Dispatcher.Invoke call
+        // makes this explicit and guards against future refactoring that might move
+        // the continuation off the UI thread.
+        Dispatcher.Invoke(() =>
+        {
+            if (exportError is not null)
+            {
+                StatusText.Text = "GEO-Export fehlgeschlagen.";
+                AppendVisualReport($"GEO-Exportfehler: {exportError}");
+                App.MarkOperation("Fault: ExportGEO");
+                MessageBox.Show(exportError.ToString(), "GEO-Export Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else if (geoPath is not null)
+            {
+                StatusText.Text = $"GEO exportiert: {Path.GetFileName(geoPath)}";
+                AppendVisualReport($"GEO gespeichert: {geoPath}");
+                App.MarkIdle();
+                MessageBox.Show(
+                    $"GEO erfolgreich erstellt:{Environment.NewLine}{geoPath}",
+                    "Export GEO",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+            }
+        });
+    }
+
     private void ResetViewport()
     {
         var stepViewport = EnsureViewport();
